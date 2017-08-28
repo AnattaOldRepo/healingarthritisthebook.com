@@ -1,0 +1,237 @@
+.resources{
+	&__page{
+		background:$white;
+		max-width:1000px;
+		margin:0 auto;
+		padding:50px 20px;
+		@include screen(tablet) {
+			padding:60px 40px;
+		}
+		@include screen(desktop) {
+			padding:75px 75px 100px 75px;
+		}
+		.accordion--title{
+			text-align:left;
+			position:relative;
+			background:#f5f7f9;
+			text-align:center;
+			border:none;
+			font-size:16px;
+			@include screen(tablet) {
+				padding:20px;
+				font-size:28px;
+
+			}
+			&:after , &:before{
+				opacity:0;
+				display:none;
+			}
+			.view{
+				position:absolute;
+				right:10px;
+				top:16px;
+				display:none;
+				opacity:0;
+				font-size:16px;
+				color:#3b3b3b;
+				text-decoration:underline;
+				@include screen(tablet) {
+					display:none;
+					opacity:0;
+				}
+			}
+		}
+		.accordion--item{
+			display:block;
+		}
+	}
+	&__title{
+		font-size:30px;
+		line-height:40px;
+		color:$gray;
+		font-family:$font-family-demi;
+		font-weight:normal;
+		text-align:center;
+		margin:0 0 30px 0;
+		@include screen(tablet) {
+			font-size:42px;
+			line-height:50px;
+		}
+		@include screen(tablet) {
+			
+			margin:0 0 50px 0;
+		}
+		span{
+			color:$orange;
+		}
+	}
+	&__content{
+		padding:10px 0 40px 0;
+		@include screen(tablet) {
+			padding:30px 0 80px 0;
+		}
+	}
+	&__row{
+		@include screen(tablet) {
+			@include flex-box();
+        	@include flex-wrap();
+		}	
+	}
+	&__box{
+		padding:10px 0;
+		@include screen(tablet) {
+			@include flex-box();
+			padding:10px 5px;
+			float:left;
+			width:33.3333%;
+		}
+	}
+	&__box__content{
+		width:100%;
+		border:1px solid #ebebeb;
+		figure{
+			margin:0;
+			text-align:center;
+			border-bottom:1px solid #ebebeb;
+			@include screen(tablet) {
+				height:200px;
+				line-height:200px;
+			}
+			img{
+				max-height:198px;
+			}
+		}
+		article{
+			padding:12px 14px;
+			h4{
+				font-family:$font-family-demi;
+				font-size:16px;
+				line-height:20px;
+				font-weight:normal;
+				@include screen(tablet) {
+					font-size:18px;
+					line-height:24px;
+				}
+				a{
+					color:$gray;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+	&__popup{
+		max-width:600px;
+		background:#f5f5f5;
+		padding:30px 30px 50px 30px;
+		margin:100px auto 0 auto;
+		border:1px solid #a1a1a1;
+		@include border-radius(2px);
+		position:relative;
+		@include screen(tablet) {
+			margin:120px auto 80px auto;
+		}
+		&__close{
+			position:absolute;
+			right:15px;
+			top:15px;
+			width:24px;
+			height:24px;
+			span , span:before, span:after {
+	            content: '';
+	            width:24px;
+	            height:2px;
+	            background:#a3a3a3;
+	            position:absolute;
+	            left:0;
+	            top:10px;
+	        }
+	        span {
+	        	background:none;
+	            &:before, &:after {
+	                top: 0;
+	            }
+	            &:before {
+	            	@include transform(rotate(45deg));
+	            }
+	            &:after {
+	            	@include transform(rotate(-45deg));
+	            }
+	        }
+		}
+		&__content{
+			text-align:center;
+			h4{
+				 font-size:18px;
+				 line-height:26px;
+				 color:$gray;
+				 padding:20px 0;
+				 font-weight:normal;
+				 font-family:$font-family-demi;
+				 @include screen(tablet) {
+				 		font-size:20px;
+				 		line-height:28px;
+				 		padding:30px 10px 30px 10px;
+				 }
+			}
+		}
+		&__form{
+			margin:0 auto;
+			max-width:400px;
+			label {
+			    color:$gray;
+			    display: block;
+			    float: none;
+			    font-family:$font-family-demi;
+			    margin-bottom: 10px;
+			    margin-left: 0;
+			    padding: 0;
+			    text-align: left;
+			    letter-spacing: 0.03em;
+			    font-size:15px;
+			    @include screen(tablet) {
+			    	font-size:16px;
+			    }
+			}
+			.mc-field-group{
+				margin:0 0 25px 0;
+			}
+			.form input[type="email"], input[type="text"]{
+				background:$white;
+				font-family:$font-family-demi;
+			}
+		}
+
+	}
+}
+
+.thank-you-bar{
+    position:relative;
+    text-align: center;
+    font-size: 24px;
+    background: #2097a4;
+    color:#fff;
+    width:100%;
+    padding: 30px 0;
+    z-index:9999;
+}
+.thank-you-bar .close-bar{
+   background: #137b86;
+   border-radius: 50%;
+   border:none;
+   color:#fff;
+   width:32px;
+   height:32px;
+   text-align: center;;
+   line-height: normal;
+   padding: 0;
+   position: absolute;
+   right: 10px;
+   top:22px;
+   font-size: 14px;
+   text-transform: uppercase;
+
+}
+.thank-you-bar br{
+  display: none !important;
+}
+

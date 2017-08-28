@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,400,500,600');
+
+//	Font size using Sass map
+// 	Ref: http://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+//	========================
+
+$work-sans: 'Work Sans', sans-serif;
+
+$p-font-sizes: (
+	null	:	15px,
+	medium	:	18px
+);
+
+$h1-font-sizes: (
+	null	:	26px,
+	medium	:	38px
+);
+
+$h2-font-sizes: (
+	null	:	22px,
+	medium	:	26px
+);
+
+$h2-small-font-sizes: (
+	null	:	18px,
+	medium	:	22px
+);
+
+$h3-font-sizes: (
+	null	:	15px,
+	medium	:	20px
+);
+
+
+$nav-font-sizes: (
+	null	:	15px,
+	medium	:	18px
+);
+
+p{
+	@include font-size($p-font-sizes);
+	font-weight: 400;
+	line-height: 24px;
+	@include screen(tablet) {
+		line-height: 28px;
+	}
+}
+a{
+	color: $gray;
+	&:hover{
+		text-decoration: none;
+	}
+}
+strong{
+	font-weight: 600;
+}
+
+.title{
+	@include font-size($h1-font-sizes);
+	font-weight: 300;
+	font-family: $work-sans;
+	margin-bottom: 18px;
+	@include screen(tablet) {
+		margin-bottom: 24px;
+		font-size: 42px;
+	}
+}
+
+.title--sub{
+	font-size:16px;
+	font-weight: 400;
+	line-height: 30px;
+	font-family: $work-sans;
+	@media (min-width:768px){
+		font-size: 20px;
+	}
+}
+.title--sub--small{
+	@include font-size($h2-small-font-sizes);
+	font-weight: 400;
+	line-height: 30px;
+	font-family: $font-family-demi;
+	letter-spacing: 0.012em;
+}
+
+.article--title{
+	@include font-size($h3-font-sizes);
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 15px;
+	font-family: $font-family;
+	@include screen(tablet) {
+		margin-bottom: 25px;
+		line-height: 30px;
+	}
+}
+.section-title{
+	font-family: $work-sans;
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	font-weight:300;
+	@include screen(tablet) {
+		font-size: 30px;
+		line-height: 38px;
+		margin-bottom: 25px;
+	}
+	@include screen(desktop) {
+		font-size: 36px;
+		line-height: 48px;
+		margin-bottom: 35px;
+	}
+}
+
+@include class(visuallyhidden) {
+	@include margin(-1px);
+	@include padding(0);
+	@include size(1px);
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
+	position: absolute;
+}
+
+
+
+iframe{
+	vertical-align: top;
+}
+img{
+	vertical-align: top;
+}
+
+.list-inline{
+	font-size: 0;
+	>li{
+		list-style: none;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 15px;
+		@include screen(tablet) {
+			font-size: 18px;
+		}
+	}
+}
+.list-dots, .list-number{ 
+	margin-bottom: 15px;
+	>li{
+		list-style: none;
+		display: block;
+		position: relative;
+		margin-bottom: 10px;
+		font-size: 15px;
+		line-height: 22px;
+		@include screen(tablet) {
+			font-size: 16px;
+			line-height: 23px;	
+		}
+		@include screen(desktop) {
+			font-size: 18px;
+			line-height: 28px;	
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.list-dots{
+	
+	>li{
+		
+		padding-left: 9px;
+		
+		@include screen(tablet) {
+			
+			padding-left: 14px;
+		}
+		@include screen(desktop) {
+			padding-left: 19px;
+		}
+		
+		&:before{
+			content: '';
+			@include size(5px);
+			background-color: $orange;
+			@include border-radius(50%);
+			position: absolute;
+			left: 0;
+			top: 6px;
+			display: block;
+			@include screen(tablet) {
+				@include size(6px);
+			}
+			@include screen(desktop) {
+				@include size(9px);
+				top: 8px;	
+			}
+		}
+	}
+	&.green{
+		>li{
+			&:before{
+				background-color: $green-light;
+			}
+		}
+	}
+}
+
+.list-number{
+	counter-reset: item;
+	>li {
+		position: relative;
+		padding-left: 20px;
+
+		@include screen(tablet) {
+			padding-left: 25px;
+		}
+		&:before {
+			content: counter(item) ". ";
+			counter-increment: item;
+
+			position: absolute;
+			left: 3px;
+			top: 1px;
+			// font-size: 13px;
+			font-weight: 600;
+			@include screen(tablet) {
+				left: 3px;
+				top: 0;
+			}
+		}
+		&:nth-child(n+10) {
+			
+			padding-left: 25px;
+			@include screen(tablet) {
+				padding-left: 35px;
+			}
+		}
+	}
+}
+
+.wrapper {
+	max-width:1280px;
+	margin:auto;
+}

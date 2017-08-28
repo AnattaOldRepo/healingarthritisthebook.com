@@ -1,0 +1,43 @@
+{
+  "name": "eat_fat_get_thin",
+  "private": true,
+  "version": "1.0.0",
+  "description": "EAT FAT, GET Thin ======== Designing and Front end Development for Dr. Hyman Eat Fat, Get Thin Book.",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyman-Enterprises/efgt.git"
+  },
+  "author": "Anatta Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyman-Enterprises/efgt/issues"
+  },
+  "homepage": "http://www.drhyman.com/",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-coffee": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-include": "^2.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "jshint": "^2.9.1",
+    "node-bourbon": "^4.2.3",
+    "run-sequence": "^1.1.5"
+  }
+}

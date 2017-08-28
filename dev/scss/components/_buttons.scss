@@ -1,0 +1,93 @@
+@include class(btn) {
+	@include transition(background-color .3s ease);
+	@include size(auto);
+	@include padding(0 15px);
+	border-radius: 5px;
+	
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 38px;
+	font-family: $font-family-bold;
+	
+	cursor: pointer;
+	background-color: transparent;
+	z-index: 1;
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+	color: $white;
+	@include screen(tablet) {
+		@include padding(0 24px);
+	}
+}
+
+@include class(btn-primary) {
+	background-color: $orange;
+	&:hover{
+		background-color: darken($orange, 10%);
+	}
+}
+
+@include class(btn-secondary) {
+	background-color: $blue;
+	&:hover{
+		background-color: darken($blue, 10%);
+	}
+}
+
+@include class(btn-medium) {
+	font-size: 16px;
+	line-height: 36px;
+	font-weight:500;
+	@include screen(tablet) {
+		font-size: 16px;
+		line-height: 44px;
+	}
+}
+
+@include class(btn-blue-dark) {
+	background-color: lighten($blue-header, 5%);
+	&:hover{
+		background-color: darken($blue-header, 5%);
+	}
+}
+
+.thunderclap{
+	background-color: #365e85;
+	font-family: $font-family-demi;
+	border-radius: 2px;
+}
+
+.c-btn {
+	display: inline-block;
+	width: auto;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	padding: 10px 16px;
+	border-radius:4px;
+	background-color: #ff6600;;
+	color: $white;
+	font-family: $work-sans;
+	letter-spacing: 0.08em;
+	white-space: normal;
+	font-size: 13px;
+	font-weight: 500;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+
+    @media (min-width:768px){
+    	font-size: 16px;
+    }
+
+	&.large {
+	
+		@media (min-width:768px){
+			padding: 21px 50px;
+			border-radius:6px;
+		}
+	}
+}

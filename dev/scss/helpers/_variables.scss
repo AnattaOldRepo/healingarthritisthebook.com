@@ -1,0 +1,62 @@
+// brand colors
+
+$black 				: 		#000000 !default;
+$white 				: 		#FFFFFF !default;
+
+
+$purpol				:       #db00ff !default;
+$orange				:		#ff6600 !default;
+$red 				: 		#f44336 !default;
+$green				: 		#3cb862 !default;
+$green-light		: 		#05b16e !default;
+$gray 				: 		#464646 !default;
+$gray-light			: 		#e1e1e1 !default;
+$gray-dark 			: 		#959595 !default;
+$blue 				: 		#365e85 !default;
+$blue-light			: 		#aebac8 !default;
+$blue-dark			: 		#4476a6 !default;
+
+$blue-header		: 		#0090a9 !default;
+
+$bonus-gray			: 		#cac1c1 !default;
+
+
+$primary-color		: 		$blue !default;
+$secondary-color 	: 		$green !default;
+
+$text-color			: 		$gray !default;
+
+$border-color 		: 		$gray-light !default;
+
+$work-sans			: 		'Work Sans', sans-serif;
+$font-family		: 		'avenir-regular', sans-serif !default;
+$font-family-bold	: 		'avenir-bold', sans-serif !default;
+$font-family-demi	: 		 $work-sans;
+$font-family-lt		: 		'avenir-lt', sans-serif !default;
+
+$inputBrColor: #d3d3d3 !default;
+
+// Image directory
+// -------------------------
+
+$img_dir: "../images";
+
+
+// Breakpoints
+// ======================
+
+$desktop		:			1025px !default;
+$desktop-max		:			1280px !default;
+$mobile			: 			767px !default;
+$tablet 		:			768px !default;
+$tablet-max 	:			1024px !default;
+$desktoplarge	: 			1600px !default;
+
+//	Font size using Sass map
+// 	Ref: http://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+//	========================
+$breakpoints: (
+  small : $mobile,
+  medium: $tablet,
+  large : $desktop
+);

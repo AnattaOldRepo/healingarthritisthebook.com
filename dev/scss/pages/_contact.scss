@@ -1,0 +1,62 @@
+.contact{
+	padding-bottom: 80px;
+	@include screen(tablet) {
+		padding-top: 82px;
+		padding-bottom: 150px;
+	}
+	@include screen(desktop) {
+		padding-bottom: 210px;
+	}
+	.title{
+		@include screen(tablet) {
+			margin-bottom: 38px;
+		}	
+	}
+	&-box{
+		max-width: 650px;
+		margin: 0 auto;
+		padding: 22px;
+		@include screen(tablet) {
+			padding: 46px 63px 46px 79px;
+		}
+		background-color: $white;
+		p{
+			font-family: $font-family-demi;
+			font-size: 16px;
+			line-height: 26px;
+			margin-bottom: 24px;
+			@include screen(tablet) {
+				font-size: 20px;
+				line-height: 36px;
+				margin-bottom: 34px;
+			}
+		}
+
+		.list-dots{
+			margin-bottom: 9px;
+			margin-top: -15px;
+			@include screen(tablet) {
+				margin-top: -32px;
+			}
+			>li{
+				font-family: $font-family-demi;
+				font-size: 16px;
+				line-height: 21px;
+				margin-bottom: 15px;
+				@include screen(tablet) {
+					margin-bottom: 0;
+					font-size: 20px;
+					line-height: 40px;
+				}
+				&:before{
+					background-color: $gray;
+					@include screen(tablet) {
+						height: 8px;
+						width: 8px;
+						top: 14px;
+					}
+				}
+			}
+		}
+	}
+}

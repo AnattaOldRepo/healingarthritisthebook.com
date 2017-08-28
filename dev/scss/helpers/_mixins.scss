@@ -1,0 +1,114 @@
+@mixin class($name) {
+	.#{$name},
+	%#{$name} {
+		@content;
+    }
+}
+
+
+// Font sizes
+// -------------------------
+@mixin fontsize($size: $font-size-base, $lineHeight: $base-line-height) {
+	font-size: $size;
+	line-height: $lineHeight;
+}
+
+// Border Radius
+// -------------------------
+@mixin border-radius($radius) {
+	-webkit-border-radius:  $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+//	Font size using Sass map
+// 	Ref: http://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+//	========================
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+
+
+// Media Query Breakpoints
+// -------------------------
+
+@mixin screen($media){
+  // iPhone and Small devices == max-width: 767px ----------- */
+  @if $media == mobile {
+  	@media only screen and (min-width: $mobile){
+  		@content;
+  	}
+  }
+  @else if $media == mobile-m {
+        @media only screen and (max-width: $mobile) {
+            @content;
+        }
+    }
+  @else if $media == tablet-m {
+        @media only screen and (max-width: $tablet-max) {
+            @content;
+        }
+  }
+
+  // iPad and Small screens  == max-width: 1024px ----------- */
+  @if $media == tablet {
+  	@media only screen and (min-width: $tablet){
+  		@content;
+  	}
+  }
+  @if $media == tablet-l {
+    @media only screen and (min-width: 1023px){
+      @content;
+    }
+  }
+
+  // iPad and Small screens  == max-width: 1024px ----------- */
+  @if $media == tablet-max {
+  	@media only screen and (min-width: $tablet) and (max-width: $tablet-max){
+  		@content;
+  	}
+  }
+
+  // Small Desktops and laptops == max-width: 1224px ----------- */
+  @if $media == desktop {
+  	@media only screen and (min-width: $desktop){
+  		@content;
+  	}
+  }
+  @if $media == desktop-max {
+    @media only screen and (min-width: $desktop-max){
+      @content;
+    }
+  }
+
+  @if $media == desktoplarge {
+  	@media only screen and (min-width: $desktoplarge){
+  		@content;
+  	}
+  }
+}
+
+@mixin paragraph(){
+    font-size:15px;
+    line-height:24px;
+    @include screen(tablet) {
+        font-size:17px;
+        line-height:28px;
+    }
+}

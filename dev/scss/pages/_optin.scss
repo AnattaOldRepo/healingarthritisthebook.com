@@ -1,0 +1,124 @@
+.efgt-optin{
+	// @include position(absolute, 0 null null 0);
+	@include size(100%);
+	padding-top: 38px;
+	padding-bottom: 40px;
+	@include screen(tablet) {
+		padding-top: 58px;
+		padding-bottom: 90px;
+	}
+	&__box{
+		background-color: $white;
+		border: 1px solid $border-color;
+		@include padding(0 0 33px);
+		@include screen(tablet) {
+			@include padding(36px 36px 53px);
+		}
+		@include screen(desktop) {
+			@include padding(39px 56px 69px);
+		}
+	}
+	.container{
+		opacity: 0.96;
+		@include screen(desktop) {
+			max-width: 1216px;	
+		}
+	}
+	.title--sub{
+		margin-bottom: 25px;
+		@include screen(tablet) {
+			margin-bottom: 40px;
+		}
+	}
+	&__box{
+		.row{
+			&.has--padding {
+				@include screen(desktop) {
+					@include margin(null -30px);
+				}
+				.col{
+					@include screen(desktop) {
+						@include padding(null 30px);
+					}
+				}
+			}
+		}
+	}
+	.form{
+		max-width: 346px;
+		@include margin(null auto);
+		form{
+			margin-bottom: 0px;
+			@include screen(tablet) {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.video--col{
+		@include screen(desktop) {
+			padding-top: 30px;
+		}
+	}
+	.form--col{
+		@include screen(desktop) {
+			padding-top: 24px;
+		}	
+		.button{
+			@include screen(desktop) {
+				width:100%;
+			}	
+		}
+	}
+	.mc__form{
+		padding: 0 15px;
+		@include screen(desktop) {
+			padding: 0 10px;
+		}
+	}
+	.image--col{
+		.video{
+			margin:15px 0 0 0;
+		}
+	}
+}
+
+.efgt-home-images{
+	margin:30px 0 0;
+	@include screen(tablet) {
+		margin:50px 0 0 0;
+	}
+}
+.efgt-home-images-row{
+	@include clearfix();
+	padding:0 15px;
+	@media only screen and (min-width: 640px){
+		margin:0 -10px;
+	}
+	@include screen(tablet) {
+		padding:0;
+	}
+	@include screen(desktop) {
+		margin:0 -25px;
+	}
+}
+.efgt-home-images-box{
+	margin:0 0 20px 0;
+	@media only screen and (min-width: 640px){
+		float:left;
+		padding:0 10px;
+		width:50%;
+		margin:0 0 20px 0;
+	}
+	@include screen(desktop) {
+		padding:0 25px;
+		width:25%;
+		margin:0;
+	}
+	img{
+		max-width:100%;
+	}
+}
+
+.m-20 {
+	margin-top:20px;
+}

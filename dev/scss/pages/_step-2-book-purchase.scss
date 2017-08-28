@@ -1,0 +1,984 @@
+.book-purchase{
+
+	.container{
+		@include screen(tablet) {
+			max-width: 1116px;
+			@include padding(null 15px);
+		}
+	}
+
+	&__parent {
+		border-bottom:10px solid $orange;
+		@media (min-width:768px){
+			border-bottom:27px solid $orange;
+    	}	
+	}
+
+	&__bg {
+		background: url('#{$img_dir}/book-perchase-bg.jpg') no-repeat top center ;
+		padding-bottom: 0;
+    	background-size: cover;
+    	@media (min-width:768px){
+			height: 654px;
+    	}	
+
+	}
+	&__video{
+		padding-top: 38px;
+		padding-bottom: 40px;
+		@include screen(tablet) {
+			padding-top: 65px;
+			padding-bottom: 57px;
+		}
+		@include screen(desktop) {
+			padding-top: 48px;
+			padding-bottom: 147px;
+		}
+		&:before, &:after{
+			opacity: 0.6;
+		}
+		&-section{
+			padding-top: 20px;
+			@include screen(tablet) {
+				padding-top: 45px;
+			}
+			.col{
+				@include screen(tablet-max) {
+					width: 50%;
+				}
+			}
+
+			.video--small-container {
+				background-color: $white;
+			}
+			.video{
+				@include screen(tablet-max) {
+					padding-bottom: 49.25%;
+				}
+			}
+		}
+		&--copy{
+			padding-top: 22px;
+			font-family: $font-family-demi;
+			@include screen(tablet) {
+				padding-left: 20px;
+				padding-top: 0;
+			}
+			@include screen(desktop) {
+				padding-top: 0;
+				padding-left: 48px;
+			}
+		}
+		.container{
+			@include screen(mobile) {
+				max-width: 1080px;
+			}
+		}
+		.article-title{
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 8px;
+			font-weight:400;
+			@include screen(desktop) {
+				font-size: 20px;	
+				margin-bottom: 10px;
+			}
+			@include screen(desktop) {
+				font-size: 24px;	
+				margin-bottom: 15px;
+			}
+		}
+		.title{
+			@include screen(tablet) {
+				line-height: 48px;
+				margin-bottom: 28px;
+				font-size: 42px;
+			}
+			&--sub{
+				letter-spacing: 0.016em;
+				color: rgba($gray, .5);
+				font-weight: 400;
+			}
+			&.title2b{
+				@include screen(tablet) {
+					font-size:38px;
+				}
+			}
+		}
+	}
+	&__bgbox{
+		background:$white;
+		padding:30px 20px;
+		margin-top:50px;
+
+	}
+	.efgt-2b-bookimage{
+		text-align:center;
+	}
+
+	.col__button {
+		margin-top: 30px;
+	}
+}
+
+
+.steps{
+	padding: 35px 0 32px;
+	@include screen(tablet) {
+		padding: 77px 0 72px;
+	}
+
+	&--box{
+		
+		display: block;
+		margin-bottom: 20px;
+		padding-top: 8px;
+		padding-bottom: 37px;
+		@include screen(tablet) {
+			margin-bottom: 0;
+			min-height:270px;
+		}
+		@include screen(desktop) {
+			min-height:240px;
+		}
+	}
+	.row{
+		&.has--padding{
+			@include screen(tablet) {
+				@include margin(null -15px);
+			}
+		}
+		.col{
+			@include screen(tablet) {
+				@include padding(null 15px);
+			}
+		}
+	}
+	i{
+		color: $blue;
+	}
+	.icon-book{
+		font-size: 57px;
+		@include screen(tablet) {
+			font-size: 83px;
+		}
+	}	
+	.icon-note{
+		font-size: 57px;
+		@include screen(tablet) {
+			font-size: 71px
+		}
+	}
+	.icon-gift{
+		font-size: 55px;
+		@include screen(tablet) {
+			font-size: 67px;
+		}
+	}
+	&--icon{
+		height: 97px;
+		position: relative;
+		@include screen(tablet) {
+			height: 137px;
+		}
+		i{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			display: block;
+		}
+	}
+	&--copy{
+		
+	
+		font-family: $work-sans;
+		font-size: 18px;
+		line-height:24px;
+		@include screen(desktop) {
+			font-size: 22px;
+			line-height:28px;	
+		}
+		>span{
+			display: block;
+			@include screen(desktop) {
+				display: inline-block;
+				vertical-align: middle;	
+			} 
+		}
+	}
+	&--number{
+		font-size: 28px;
+		color: #db00ff;
+		margin-bottom: 10px;
+		font-weight: 700;
+		@include screen(desktop) {
+			margin-right: 15px;
+			margin-left: -15px;
+			margin-bottom: 0;
+			font-size: 36px;
+		}
+	}
+	.btn{
+		width: 214px;
+		line-height: 48px;
+	}
+	&--btn-area{
+		@include screen(tablet) {
+			padding-top: 4px;
+		}
+	}
+}
+
+.mc-bonus{
+	background-color: rgba($bonus-gray, .08);
+	@include padding(40px null);
+	@include screen(tablet) {
+		@include padding(80px null);	
+	}
+	@include screen(tablet) {
+		@include padding(80px null 116px);	
+	}
+	&__title{
+		font-family: $work-sans;
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: 300;
+		@include screen(tablet) {
+			font-size: 40px;
+			line-height: 48px;
+		}
+		&.nytitle{
+			@include screen(tablet) {
+				font-size: 30px;
+				line-height: 44px;
+				padding:0 10px;
+			}
+		}
+
+
+	}
+
+	.store--links {
+		@media(min-width:768px){
+			padding-top:25px;
+		}
+	}
+
+	&__box{
+		border: 2px solid $border-color;
+		background-color: $white;
+		display: table;
+		width: 100%;
+		@include clearfix();
+		&--left{
+			text-align: center;
+			padding-top: 33px;
+			@include screen(desktop) {
+				width: 384px;
+				background: url("#{$img_dir}/mc-bonus-bg.jpg") no-repeat top left #f3f3f3;
+				background-size: cover;
+				vertical-align: top;
+				display: table-cell;
+				text-align: center;
+				padding-top: 44px;
+			}
+		}
+		&--right{
+			@include screen(desktop) {
+				width: 100%;
+				border-left: 2px solid $border-color;
+				float: right;
+				display: table-cell;
+			}
+		}
+	}
+}
+
+.store--links{
+	background-color: $white;
+	.list-inline{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		img{
+			width: 100%;
+		}
+		>li{
+			display: flex;
+			@include padding(null 10px);
+			@include screen(tablet) {
+				@include padding(null 20px);
+			}
+			.bonus__steps & {
+				@include padding(null 5px);
+			}
+			.bonus__steps--2b & {
+				@include padding(null 0);
+				img{
+					@include screen(tablet) {
+						width:90%;
+					}	
+				}
+				&:nth-child(2n){
+					text-align:center;
+					img{
+						@include screen(tablet) {
+							width:70%;
+						}	
+					}
+				}
+				&:last-child{
+					text-align:center;
+					img{
+						@include screen(tablet) {
+							width:80%;
+						}	
+					}
+				}
+			}
+			&.title{
+				
+				color: rgba($gray,.5);
+				padding: 0;
+				margin: 0;
+				display: none;
+				@include screen(tablet) {
+					width: 270px;
+					font-size: 16px;
+					display: flex;
+				}
+				@include screen(desktop) {
+					font-size: 26px;
+					width: 410px;
+				}
+			}
+		}
+	}
+	&.store--links--2b{
+		.list-inline > li.title{
+			@include screen(tablet) {
+				width: 420px;
+			}
+			@include screen(desktop) {
+				width:760px;
+			}
+		}
+	}
+}
+
+.bonus{
+	&__steps{
+		@include clearfix();
+		overflow: hidden;
+		border-bottom: 1px solid $border-color;
+		@include padding(20px);
+		font-size: 14px;
+		font-family: $font-family-demi;
+		@include screen(tablet) {
+			@include padding(48px 50px 42px);
+			display: table;
+			width: 100%;
+			font-size: 20px;
+		}
+		&:first-child{
+			p{
+				margin-bottom: 0;
+			}
+		}
+		&--number{
+		
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 20px;
+			@include screen(tablet) {
+				float: left;
+				display: table-cell;
+				width: 127px;
+				vertical-align: top;	
+				text-align: left;
+				margin-bottom: 0;
+			}
+		}
+		&--copy{
+			@include screen(tablet) {
+				display: table-cell;
+				width: 100%;
+				vertical-align: top;
+			}
+			>p{
+				letter-spacing: 0.02em;
+				margin-bottom: 15px;
+				text-align: center;
+				@include screen(tablet) {
+					font-size: 20px;
+					line-height: 28px;
+					margin-bottom: 27px;
+					margin-top: -6px;
+					text-align: left;
+				}
+			}
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				opacity: .8;
+			}
+		}
+		.has-two-inputs{
+			@include clearfix();
+			.mc-field-group:first-child{
+				float: left;
+				width: 60%;
+				margin-right: 1.5%;
+			}
+			.mc-field-group:last-child{
+				float: left;
+				width: 38.5%;
+			}
+		}
+		.form--buttons{
+			text-align: center;
+			@include screen(tablet) {
+				margin-top: -15px;
+				text-align: left;
+			}
+			.btn{
+				max-width: 280px;
+				width: 100%;
+				margin: 0 auto 15px; 
+				@include screen(tablet) {
+					margin: 0;
+				}
+				+span{
+					display: block;
+					text-align: center;
+					@include screen(tablet) {
+						float: right;
+						margin-top: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.author{
+	@include clearfix();
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	&--headshot{
+		@include size(106px);
+		@include border-radius(50%);
+		border: 3px solid $border-color;
+		overflow: hidden;
+		display: flex;
+		margin: 0 auto;
+		@include screen(tablet) {
+			margin: 0;
+		}
+	}
+	&--info{
+		padding-left: 0;
+		vertical-align: middle;
+		display: flex;
+		vertical-align: middle;
+		flex-direction: column;
+		letter-spacing: 0.03em;
+		text-align: center;
+		width: 100%;
+		padding-top: 10px;
+		@include screen(tablet) {
+			padding-left: 26px;
+			text-align: left;
+			width: auto;
+			padding-top: 0;
+		}
+		h4{
+			font-size: 14px;
+			text-transform: uppercase;
+			font-family: $work-sans;
+			font-weight: 500;
+			margin-bottom: 7px;
+			@include screen(tablet) {
+				font-size: 18px;
+			}
+		}
+		small{
+			font-size: 13px;
+			font-family: $work-sans;
+			font-weight: 500;
+			@include screen(tablet) {
+				font-size: 16px;
+			}
+		}
+	}
+	&__testimonials{
+		padding-top: 15px;
+		letter-spacing: 0.02em;
+		text-align: center;
+		@include screen(tablet) {
+			padding-top: 33px;
+			text-align: left;
+		}
+	}
+}
+
+.testimonials{
+	padding-top: 60px;
+	padding-bottom: 36px;
+	border-bottom:1px solid #f1f1f1;
+	margin:auto;
+	@include screen(tablet) {
+		padding-top: 113px;
+		padding-bottom: 36px;
+	}
+	@include screen(desktop) {
+		background-image: url("#{$img_dir}/testimonial-bg-new.png");
+		background-repeat:no-repeat;
+		background-position: left bottom;
+
+
+	}
+	.container{
+		@include screen(desktop) {
+			padding-left: 253px;
+		}
+	}
+	.title{
+		text-align: center;
+		@include screen(tablet) {	
+			margin-bottom: 50px;
+		}
+		@include screen(desktop) {
+			text-align: left;
+		}	
+	}
+	blockquote{
+		margin: 0;
+		padding: 0;
+		p{
+			font-size: 16px;
+			line-height: 26px;
+			@include screen(tablet) {
+				font-size: 24px;
+				line-height: 36px;
+			}
+
+		}
+	}
+
+	.slick-dots li button:hover {
+	  background: $purpol;
+	}
+
+	.slick-dots li.slick-active button {
+	  background: $purpol;
+	}
+	&__slider{
+		
+		background-color: $white;
+		@include screen(tablet) {
+			padding: 0 10px;	
+		}
+		&-item{
+			height: auto;
+			padding-bottom: 30px;
+			@include screen(tablet) {
+				height: 350px;
+				padding-bottom: 0;
+			}
+			&:focus{
+				outline: 0;
+			}
+		}
+	}
+	&.upsell-testimonial{
+		background-color: #f7f7f7;
+		@include screen(tablet) {
+			padding-top: 99px;
+			padding-bottom: 42px;
+		}
+		.testimonials__slider{
+			background-color:#f7f7f7;
+		}
+		.title{
+			@include screen(tablet) {
+				font-size: 42px;
+			}
+		}
+		.slick-dots li button{
+			border-color: $orange;
+		}
+		.slick-dots li.slick-active button{
+			background-color: $orange;	
+		}
+	}
+}
+
+.slick-dots{
+	text-align: center;
+	@include screen(tablet) {
+		@include position(absolute, 42px 15px null null);
+	}
+	font-size: 0;
+	li{
+		display: inline-block;
+		position: relative;
+		@include size(13px);
+		margin: 0 5px;
+		cursor: pointer;
+		button{
+			@include size(13px);
+		    @include padding(0);
+		    @include border-radius(50%);
+		    border: 1px solid $border-color;
+		    background: $white;
+		    display: block;
+		    cursor: pointer;
+		    color: transparent;
+		    outline: none;
+		    &:hover{
+		    	background: $border-color;
+		    }
+		}
+		&.slick-active{
+			button{
+				background: $border-color;
+			}
+		}
+	}
+}
+.order-panel{
+	// padding-top: 146px;
+	.container{
+		position: relative;
+		max-width: 1040px;
+	}
+	&__title{
+		font-size: 14px;
+		margin-bottom: 8px;
+		letter-spacing: 0.013em;
+		padding-left: 0;
+		font-weight: 400;
+		@include screen(tablet) {
+			padding-left: 0;
+			font-size: 20px;
+			margin-bottom: 14px;
+		}
+		@include screen(desktop) {
+			font-size: 36px;
+		}
+	}
+	.title{
+		font-size: 20px;
+		@include screen(tablet) {
+			font-size: 28px;
+		}
+		@include screen(desktop) {
+			font-size: 40px;
+		}
+	}
+	&__copy{
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 13px;
+		@include screen(tablet) {
+			padding-left: 290px;
+			padding-bottom: 63px;
+			padding-top: 0;
+			text-align: left;
+		}
+		@include screen(desktop) {
+			padding-left: 353px;
+		}
+	}
+	&.less-book{
+		background-color: #f9f9f9;
+		>.container{
+			overflow: hidden;
+			@include screen(tablet) {
+				padding-top: 106px;
+			}
+			@include screen(desktop) {
+				padding-top: 146px;
+			}
+			&:before{
+				content: '';
+				
+				background: url("#{$img_dir}/sample-best-sellier.png") no-repeat left bottom transparent;
+				@include size(99px 132px);
+				background-size: cover;
+				position: absolute;
+				bottom: 12px;
+				left: 15px;
+				display: none;
+				@include screen(tablet) {
+					@include size(175px 234px);
+					left: 60px;
+					display: block;
+					bottom:0;
+				}
+				@include screen(desktop) {
+					@include size(260px 290px);
+				}
+			}
+		}
+	}
+	&.more-book{
+		background-color: #f9f9f9;
+		>.container{
+			overflow: hidden;
+			@include screen(tablet) {
+				padding-top: 106px;
+			}
+			@include screen(desktop) {
+				padding-top: 146px;
+			}
+			&:before{
+				content: '';
+				
+				background: url("#{$img_dir}/efgt-book-boundle.png") no-repeat left bottom transparent;
+				@include size(90px 68px);
+				background-size: contain;
+				position: absolute;
+				bottom: -16px;
+				left: 15px;
+				display: none;
+				@include screen(tablet) {
+					display: block;
+					@include size(350px 272px);
+					left: 10px;
+				}
+				@include screen(desktop) {
+					left: 0;
+				}
+			}
+		}
+		.order-panel__copy{
+			padding-top: 20px;
+			padding-left: 0;
+			padding-bottom: 0px;
+			@include screen(tablet) {
+				padding-bottom: 63px;
+				padding-top: 0;
+				padding-left: 320px;
+			}
+			@include screen(desktop) {
+				padding-bottom: 54px;
+				padding-left: 353px;
+			}
+		}
+	}
+	.store--links{
+		padding-top: 18px;
+		padding-bottom: 26px;
+		border-bottom: 2px solid $border-color;
+		overflow: hidden;
+		.container{
+			@include screen(desktop) {
+				padding-left: 18px;
+			}
+		}
+		.list-inline{
+			>li{
+				@include screen(tablet) {
+					padding-right: 15px;
+					padding-left: 15px;
+				}
+				@include screen(desktop) {
+					padding-right: 30px;
+					padding-left: 30px;
+				}
+			}
+		}
+
+		.title {
+			font-weight: 400;
+		}
+	}
+}
+.share{
+	background-color: #f9f9f9;
+	text-align: center;
+	@include screen(tablet) {
+		text-align: left;
+	}
+	.container{
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-right: 20px;
+		@include screen(tablet) {
+			padding-top: 94px;
+			min-height: 460px;
+			padding-bottom: 0;
+			padding-right: 30px;
+		}
+		@include screen(desktop) {
+			padding-left: 89px;
+		}
+		&:before{
+			content: '';
+			display: block;
+			background: url("#{$img_dir}/efgt-cooking-book-image.png") no-repeat left bottom transparent;
+			background-size: cover;
+			@include size(97px 130px);
+			margin: 0 auto 20px;
+			@include screen(tablet) {
+				@include size(180px 270px);
+				position: absolute;
+				right: 20px;
+				bottom: 137px;
+				margin: 0;
+			}
+			@include screen(desktop) {
+				right: 166px;
+			}
+		}
+	}
+	.title{
+		@include screen(tablet) {
+			font-size: 42px;
+		}
+		&-sub{
+			color: #959595;
+			font-size: 14px;
+			line-height: 26px;
+			margin-bottom: 16px;
+			@include screen(tablet) {
+				font-size: 20px;
+				margin-bottom: 36px;
+			}
+			@include screen(desktop) {
+				font-size: 26px;
+				line-height:36px;
+			}
+		}
+	}
+	.title-sub {
+		font-family: $work-sans;
+		font-weight: 400;
+	}
+	.social-links{
+		margin-bottom: 20px;
+		@include screen(tablet) {
+			max-width: 500px;
+		}
+	}
+	&-wrap{
+		@include clearfix();
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		@include screen(tablet) {
+			margin-left: 0;
+			margin-right: 0;
+			max-width: 500px;
+		}
+	}
+	&-count{
+		font-family: $font-family-demi;
+		margin-bottom: 20px;
+		font-size: 18px;
+		@include screen(tablet) {
+			float: right;
+			font-size: 28px;
+			line-height: 36px;
+			margin-bottom: 0;
+		}
+	}
+	&-links{
+	}
+	.amazon-bestseller{
+		text-align:center;
+		@include screen(tablet) {
+			text-align:right;
+			padding-top:50px;
+		}
+		@include screen(desktop) {
+			padding:20px 110px 0 0;
+		}
+		&.ny{
+			@include screen(desktop) {
+				padding:50px 24px 0 0;
+			}
+		}
+	}
+}
+
+.message__header{
+		@include padding(10px);
+		position: relative;
+		background-color: $orange;
+
+		@media (min-width:768px){
+			@include padding(18px 0);
+		}
+		&:after{
+			
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			@include linear-gradient(rgba(235,235,235, 0.52) 0%, rgba($black, .1) 100%);
+			@include size(100% 21px);
+			background-color: $orange;
+		}
+		h2{
+			display: block;
+			vertical-align: middle;
+			line-height: 22px;
+			color: $white;
+			font-size: 15px;
+			@include screen(tablet) {
+				display: inline-block;
+				line-height: 30px;
+				font-size: 18px;
+			}
+			
+		}
+		.btn{
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: 10px;
+			@include screen(tablet) {
+				margin-top: 0;
+				margin-left: 0;
+			}
+			@include screen(desktop) {
+				margin-top: 0;
+				margin-left: 70px;
+			}
+		}
+	}
+.amazon-bestseller-icon{
+	width:90px;
+	height:90px;
+	position:absolute;
+	top:0px;
+	background: url("#{$img_dir}/bestseller.png") no-repeat top left;
+	background-size:100% auto;
+	display:none;
+	@include screen(tablet) {
+		display:block;
+	}
+	@include screen(desktop) {
+		display:block;
+		width:110px;
+		height:110px;
+		top:0px;
+	}
+}
+.amazon-bestseller{
+	color:$gray;
+	font-family: $font-family-demi;
+	font-size:24px;
+	margin:20px 0 0 0;
+	font-weight:normal;
+	&.nysmalltitle{
+		font-size:20px;
+	}
+}	

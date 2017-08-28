@@ -1,0 +1,64 @@
+.modal{
+	@include position(fixed, 0 0 0 0);
+	z-index: 1050;
+	display: none;
+	outline: 0;
+	overflow: hidden;
+	background-color: rgba($black, .7);
+	-webkit-overflow-scrolling: touch;
+
+	&.is-open {
+	    display: block;
+	}
+	&-container{
+		max-width: 563px;
+		
+		
+		position: absolute;
+		overflow: auto;
+		top: 20%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		padding: 10px;
+		@include screen(tablet) {
+			padding: 0;
+			margin: 0;
+			position: fixed;
+			width: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&-body{
+		padding: 20px;
+		background-color: $white;
+		@include screen(tablet) {
+			padding: 50px;
+		}
+	}
+	&-title{
+		font-size: 26px;
+		line-height: 32px;
+		font-family: $font-family-demi;
+		letter-spacing: 0.02em;
+		margin-bottom: 12px;
+	}
+	&-copy{
+		font-size: 16px;
+		line-height: 28px;
+		letter-spacing: 0.026em;
+		margin-bottom: 27px;
+		@include screen(tablet) {
+			font-size: 18px;
+			line-height: 32px;	
+		}
+	}
+	.btn{
+		width: 153px;
+		line-height: 40px;
+		padding: 0;
+		text-align: center;
+	}
+}

@@ -1,0 +1,183 @@
+.program-login{
+	padding:50px 0;
+    @include screen(tablet) {
+		min-height: 650px;
+    }
+    &.dashboardpage{
+    	.box .content{
+	    	@include screen(tablet) {
+				padding:60px 78px 30px 78px;
+	    	}
+	    }
+    	.box .copy {
+    		margin:20px 0 0 0;
+    		@include screen(tablet) {
+    			margin:40px 0 0 0;
+    		}
+    		p{
+	    		color:$gray;
+	    		opacity:1;
+	    		margin:0 0 25px 0;
+	    		//font-family:$pt-sans-serif;
+	    	}
+    	}
+
+    }
+	.container {
+	    margin-left: auto;
+	    margin-right: auto;
+	    max-width: 698px;
+	    padding-left: 16px;
+	    padding-right: 16px;
+	}
+	label {
+	    color:$gray;
+	    display: block;
+	    float: none;
+	    //font-family: $pt-sans;
+	    font-weight: 600;
+	    margin-bottom: 5px;
+	    margin-left: 0;
+	    padding: 0;
+	    text-align: left;
+	    letter-spacing: 0.03em;
+	    @include paragraph();
+	}
+	h2{
+		font-size:22px;
+		line-height:32px;
+		@include screen(tablet) {
+			font-size:28px;
+			line-height:40px;
+		}	
+	}
+	.box {
+	    border: 2px solid #d7d7d7;
+	   	overflow: hidden;
+	    position: relative;
+	    @include border-radius(10px);
+	    .content{
+	    	padding:30px 15px;
+	    	@include screen(tablet) {
+				padding:60px 78px 70px 78px;
+	    	}
+	    	h2{
+	    		text-align: center;
+	    		font-weight:normal;
+	    	}
+	    }
+	    .copy{
+	    	margin:10px 0 25px 0;
+	    	@include screen(tablet) {
+	    		margin:10px 0 45px 0;	
+	    	}
+	    	p{
+	    		text-align:center;
+	    		color:$gray;
+	    		opacity:0.5;
+	    		font-size:16px;
+	    		letter-spacing: 0.03em;
+	    		@include screen(tablet) {
+	    			font-size:18px;
+	    		}
+
+	    	}
+	    }
+	}
+	.box-footer {
+		padding:30px;
+	    background-color: #f3f5f8;
+	    color:$blue;
+	    text-align: center;
+	    @include paragraph();
+	    a{
+	    	color:$blue;
+	    	text-decoration:underline;
+	    	&:hover{
+	    		text-decoration:none;
+	    	}
+	    }
+	}
+	.login-form{
+		overflow:hidden;
+		.input{
+			@include screen(tablet) {
+				width:325px;
+				float:left;
+				margin:0;
+			}	
+		}
+		.button{
+			display:table;
+			margin:15px auto;
+			@include border-radius(30px);
+			@include transition(all .4s ease-in-out);
+			//font-family: $pt-sans;
+			font-size: 14px;
+			border: 1px solid $green;;
+			padding:6px 20px;
+			text-decoration: none;
+			cursor: pointer;
+			color:$white;
+			background: $green;
+			text-align: center;
+			min-width:100px;
+			&:hover, &:focus{
+				text-decoration: none;
+				background:lighten($green , 5%);
+			}
+			@include screen(tablet) {
+				float:right;
+				margin:0;
+				padding-top:8px;
+				padding-bottom:8px;
+				padding:8px 30px;
+				font-size: 17px;
+				min-width:170px;
+				display: inline-block;
+			}
+		}
+	}
+	.error{
+	  color:$red;
+	  font-size:13px;
+	  padding:10px 0;
+	  clear:both;
+	  display:none;
+	  @include screen(tablet) {
+	      font-size:15px;
+	  }
+	}
+	.errorinput{
+	  color:$red !important;
+	  border-color:$red !important;
+	}	
+	.input ,
+	input[type="text"], 
+	input[type="email"],
+	input[type="password"], textarea {
+	    //border: 1px solid $inputBrColor;
+	    //font-family:$pt-sans;
+	    font-size: 17px;
+	    height: 40px;
+	    letter-spacing: 0.03em;
+	    line-height: 22px;
+	    padding: 8px 12px;
+	    width: 100%;
+	    margin:0;
+	}
+} 
+
+
+
+.text-orange {
+	color:$orange;
+}
+.text-purpol {
+	color:$purpol;
+}
+
+.text-black {
+	color:#000000;
+}
+

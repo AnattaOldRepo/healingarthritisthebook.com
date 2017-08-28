@@ -1,0 +1,106 @@
+.sneak-peek{
+	overflow: hidden;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+	@include screen(tablet) {
+		padding-top: 38px;
+		padding-bottom: 40px;
+		min-height: 720px;
+		
+	}
+	.bg-sneak-peek{
+		padding-top: 38px;
+		padding-bottom: 40px;
+		@include screen(tablet) {
+			padding: 100px 0 120px;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&-container{
+		text-align: center;
+		@include screen(tablet) {
+			text-align: left;
+			max-width: 520px;
+		}
+	}
+	.title{
+		margin-bottom: 30px;
+		text-align: center;
+		@include screen(tablet) {
+			text-align: left;
+		}
+	}
+	&--copy{
+		p{
+			font-size: 18px;
+			line-height: 26px;
+			margin-bottom: 22px;
+			font-family: $font-family-demi;
+		}
+		a{
+			&:hover{
+				color: $blue;
+			}
+			&.btn{
+				&:hover{
+					color: $white;
+				}
+			}
+		}
+		.btn{
+			@include screen(tablet) {
+				font-size: 20px;
+				line-height: 48px;
+			}
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+.sneak-peek-modal{
+	.modal-title{
+		font-size: 16px;
+		line-height: 22px;
+		@include screen(tablet) {
+			font-size: 20px;
+			line-height: 27px;
+		}
+		margin-bottom: 30px;
+	}
+	.close-modal{
+		position: absolute;
+		padding: 0;
+		background-color: $white;
+		max-width: 100%;
+		width: 30px;
+		height: 30px;
+		color: $blue;
+		right: 10px;
+		top: 10px;
+		@include screen(tablet) {
+			right: 0;
+			top: 0;
+		}
+		&:hover{
+			color: darken($blue, 10%);
+		}
+	}
+	.has-two-inputs{
+		@include clearfix();
+		@include screen(tablet) {
+			margin: 0 -5px;
+		}
+		@include screen(tablet) {
+			.mc-field-group{
+				float: left;
+				width: 50%;
+				padding: 0 5px;
+			
+			}
+		}
+	}
+}

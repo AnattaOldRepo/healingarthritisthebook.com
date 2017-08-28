@@ -1,0 +1,63 @@
+.bookPurchase {
+	.title--sub {
+		@media (min-width:768px){
+			font-size: 26px;
+		}
+	}
+
+	.order-panel{
+
+	}
+}
+
+.bookUpsell {
+	h2.title--sub--small {
+		@media (min-width:768px){
+			font-size: 21px;
+		}
+	}
+
+	.upsell.upsell-hero .upsell-challenge-content .hero--copy {
+		@media (min-width:1025px){
+			margin-top: 140px;
+		}
+	}
+
+	.upsell.upsell-as-seen-on .headingtext h3{
+		@media (min-width:768px){
+			font-size: 34px;
+		}
+	}
+}
+
+.bookPurchase2a {
+	.book-purchase__video .title--sub {
+		font-weight: 400;
+		color: #000;
+		@media (min-width:768px){
+			font-size: 28px;
+		}
+	}
+
+	.book-purchase__video-section {
+		background:#fff;
+		margin-top: 20px;
+		padding-bottom: 20px;
+		@media (min-width:768px){
+			margin-top: 43px;
+		}
+	}
+
+	@media only screen and (min-width: 1025px){
+		.book-purchase__video {
+		    padding-top: 48px;
+		    padding-bottom: 76px;
+		}
+	}
+
+	.steps {
+		@media (min-width:768px){
+			padding: 100px 0 72px;
+		}
+	}
+}

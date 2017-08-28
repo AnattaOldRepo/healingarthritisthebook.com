@@ -1,0 +1,75 @@
+.sr-only{
+	@extend %visuallyhidden;	
+}
+
+.hide-on-mobile{
+	display: none !important;
+	@include screen(tablet) {
+		display: inline-block !important;
+	}
+}
+.show-on-mobile{
+	display: block !important;
+	@include screen(tablet) {
+		display: none !important;
+	}
+}
+
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-green{
+	color: $green;
+}
+.text-green-light{
+	color: $green-light;
+}
+.text-blue{
+	color: $blue;
+}
+.text-gray{
+	color: $gray;
+}
+.img-left{
+	@include margin(null auto);
+	display: block;
+	@include screen(tablet) {
+		float: left;
+		margin-right: 21px;
+	}
+}
+@mixin flex-box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin flex-wrap{
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}    
+
+.displayblock{
+	display:block;
+}
+
+.thank-you-message{
+	text-align:center;
+	padding:20px;
+	background:#f7f7f7;
+	color:#ff0000;
+	font-size:18px;
+	line-height:28px;
+}
+
+.has-margin-link{
+	padding:0 0 40px 0;
+	margin:-20px 0 0 0;
+}

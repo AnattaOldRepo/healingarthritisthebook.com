@@ -1,0 +1,335 @@
+.show-on-mobile{
+	display: block;
+	@include screen(tablet) {
+		display: none;
+	}
+}
+.container{
+	@include margin(null auto);
+	@include padding(0 12px);
+	@include clearfix();
+	
+	@include screen(tablet) {
+		max-width: 1020px;
+		@include padding(0 30px);
+	}
+	@include screen(desktop) {
+		@include padding(0 12px);
+	}
+	&--small{
+		max-width: 818px;
+	}
+}
+
+.row{
+	@include clearfix();
+	&.has--padding{
+		@include screen(tablet) {
+			@include margin(null -5px);
+		}
+		.col{
+			@include screen(tablet) {
+				@include padding(null 5px);
+			}
+		}
+	}
+}
+.col{
+	float: left;
+	&--three &{
+		width: 100%;
+		@include screen(tablet) {
+			width: 33.33%;
+		}
+	}
+	&--two &{
+		width: 100%;
+		@include screen(desktop) {
+			width: 50%;
+		}
+	}
+	&--four &{
+		width: 100%;
+		@include screen(tablet) {
+			width: 50%;
+		}
+		@include screen(desktop) {
+			width: 25%;
+		}
+	}
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	&--item{
+		display: flex;
+	}
+}
+
+
+.bg-wood{
+	background: url('#{$img_dir}/cooking-video.jpg') no-repeat center center ;
+	position: relative;
+	background-size:cover;
+	max-width:1440px;
+	margin:auto;
+
+	&.bonus-delivery {
+		background: url('#{$img_dir}/bonus-bg.jpg') no-repeat top center;
+		background-size:cover;
+	}
+
+}
+.bg-sneak-peek{
+	background: url('#{$img_dir}/bg-wood-texture.jpg') repeat top center ;
+	position: relative;
+	&:after{
+		@include screen(tablet) {
+			content: '';
+			display: block;
+			background: url("#{$img_dir}/sneak-peek-bg.jpg") no-repeat 50% 50% transparent;
+			@include size(100%);
+			@include position(absolute, 0 0 0 0);
+			background-size: cover;
+		}
+		@include screen(desktoplarge) {
+			background-position: top right;
+			background-size: contain;
+		}
+	}
+	.container{
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.video{
+	position: relative;
+	padding-bottom: 49.30%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	border: 1px solid $border-color;
+	@include margin(null auto);
+	margin-bottom: 20px;
+	@include screen(tablet) {
+		padding-bottom: 51.25%; /* 16:9 */
+	}
+	@include screen(desktop) {
+		margin-bottom: 0;
+	}
+	iframe{
+		@include position(absolute, 0 null null 0);
+		@include size(100%);
+	}
+	&--large-container{
+		max-width: 798px;
+		@include margin(null auto);
+		background-color: rgba($blue, .2);
+		@include padding(8px);
+		.video{
+			border: 0;
+			margin: 0;
+			@include screen(tablet) {
+				padding-bottom: 53.25%;
+			}
+		}
+		&.has-margin{
+			margin-bottom: 40px;
+		}
+	}
+	&--small-container{
+		@include margin(null auto);
+		background-color: rgba($blue, .5);
+		@include padding(8px);	
+		.video{
+			border: 0;
+			margin: 0;
+		}
+	}
+}
+.efgt-as-seenon{
+	background-color: $white;
+	@include padding(32px 15px);
+	max-width:1280px;
+	border:1px solid $border-color;
+	margin:auto;
+	.title-small{
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: 10px;
+		font-family: $font-family-demi;
+		@include screen(desktop) {
+			margin-right: 80px;
+		}
+	}
+	.list-inline >li{
+		display: block;
+		text-align: center;
+		margin-bottom: 0;
+		@include screen(desktop) {
+			display: inline-block;
+			text-align: left;
+		}
+	}
+}
+
+.tabs{
+
+}
+.tab{
+	display: none;
+	&.is-open{
+		display: block;
+	}
+	&-nav{
+		text-align: center;
+		ul{
+			font-size: 0;
+			display: table;
+			width: 100%;
+			@include screen(tablet) {
+				display: block;
+			}
+			li{
+				display: table-cell;
+				width: 33.33%;
+				vertical-align: top;
+				font-size: 15px;
+				color: $purpol;
+				padding: 0 10px;
+				font-family: $font-family-demi;
+				@include screen(tablet) {
+					padding: 0 20px;
+					display: inline-block;
+					width: auto;
+				}
+				@include screen(desktop) {
+					padding: 0 64px;	
+				}
+				a{
+					@include transition(all 0.3s ease);
+					
+					
+					color: $purpol;
+					text-decoration: none;
+					text-transform: uppercase;
+					letter-spacing: 0.07em;
+					display: block;
+					border-bottom: 2px solid #fff;
+					font-size: 12px;
+					line-height: 16px;
+					padding-bottom: 10px;
+					min-height: 40px;
+					font-weight: 700;
+					@include screen(tablet) {
+						font-size: 15px;
+						line-height: 42px;
+						border-bottom-width: 4px;
+						padding-bottom: 0;
+						min-height: inherit;
+					}
+					&:hover{
+						border-bottom-color: $purpol;	
+					}
+				}
+				&.is-open{
+					a{
+						border-bottom-color: $purpol;
+					}
+				}
+			}
+
+			img {
+				@media (max-width:767px){
+					display: none;
+				}
+			}
+		}
+		.icon{
+	
+			&-articles{
+				margin-top: 10px;
+   				max-width: 15px;
+   				margin-right: 8px;
+			
+			}
+			&-recipes{
+		
+				
+					margin-right: 8px;
+					max-width: 25px;
+					margin-top: 8px;	
+				
+			}
+			&-support{
+				
+				
+					margin-right: 8px;
+					max-width: 20px;
+					margin-top: 11px;	
+				
+			}
+		
+		}
+	}
+	&-content{
+		padding: 30px 15px 0;
+		background-color: #f7f7f7;
+		@include screen(tablet) {
+			padding-top: 88px;
+		}
+	}
+	&-body{
+		font-size: 14px;
+	    line-height: 19px;
+	    letter-spacing: 0.038em;
+	    text-align: center;
+	    @include screen(tablet) {
+	    	font-size: 16px;
+	    	line-height: 24px;
+	    }
+	    h3{
+	    	font-size: 16px;
+	    	margin-bottom: 17px;
+	    	font-weight: 500;
+	    	@include screen(tablet) {
+	    		font-size: 24px;
+	    		margin-bottom: 37px;
+	    	}
+	    }
+	}
+	&-copy{
+		max-width: 660px;
+		margin: 0 auto 6px;
+		font-size: 13px;
+		line-height: 22px;
+		@include screen(tablet) {
+			font-size: 17px;
+			line-height: 28px;
+			margin-bottom: 27px;
+		}
+	}
+}
+.info-image{
+	max-width: 1078px;
+	margin: 0 auto;
+	padding-top: 12px;	
+}
+
+.bg-home{
+	background: url('#{$img_dir}/fat-summit-backgorund-image.jpg') no-repeat top center ;
+	background-size:cover;
+	position: relative;
+	max-width:1280px;
+	margin:auto;
+}
+.image--col{
+	.image{
+		margin:0 0 20px 0;
+		@include screen(desktop) {
+			margin:20px 0 0 0;
+		}
+	}
+}

@@ -1,0 +1,98 @@
+.footer{
+	@include clearfix();
+	background-color: #f4f4f4;
+	border-bottom: 1px solid rgba($black, .2);
+	border-top: 1px solid rgba($black, .2);
+	.container{
+		max-width: 1280px;
+		@include padding(25px 15px);
+		@include screen(tablet) {
+			@include padding(null 20px);
+		}
+		@include screen(desktop) {
+			@include padding(null 80px);
+		}
+	}
+
+	.logo {
+		@media (max-width:768px){
+			top:-20px;
+		}
+	}
+	&--nav{
+		text-align: center;
+		@include screen(tablet) {
+			float: right;
+		}
+		a{
+
+			font-size: 12px;
+			font-weight: 700;
+			text-decoration: none;
+			letter-spacing: 0.05em;
+			@include screen(tablet) {
+				font-size: 16px;	
+			}
+			&:hover{
+				opacity: .7;
+			}
+		}
+		ul>li{
+			padding: 0 5px;
+			@include screen(tablet) {
+				padding: 0 19px;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+	&--logo{
+		margin: 0 auto 10px;
+		@include screen(tablet) {
+			text-align: left;
+			float: left;
+			margin-bottom: 0;
+			position: relative;
+			top:-15px;
+		}
+	}
+	&--copy{
+		background-color: #f4f4f4;
+		font-size: 12px;
+		line-height: 22px;
+		@include clearfix();
+		text-align: center;
+		a{
+			text-decoration: none;
+			&:hover{
+				opacity: .9;
+			}
+		}
+		.container{
+			max-width: 1280px;
+			width: 100%;
+			@include padding(17px 30px);
+			@include screen(tablet) {
+				@include padding(null 20px);
+			}
+			@include screen(desktop) {
+				@include padding(null 80px);
+			}
+		}
+		.copy-left{
+			margin-bottom: 10px;
+			@include screen(desktop) {
+				float: left;
+				margin-bottom: 0;
+				text-align: left;
+			}
+		}
+		.copy-right{
+			@include screen(desktop) {
+				float: right;
+				text-align: right;
+			}
+		}
+	}
+}

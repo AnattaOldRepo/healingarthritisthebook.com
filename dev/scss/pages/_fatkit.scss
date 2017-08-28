@@ -1,0 +1,122 @@
+.fatkit-title{
+	@include screen(tablet) {
+		font-size:48px;
+	}
+}
+.fatkit{
+	&__block{
+		max-width:800px;
+		margin:0 auto;
+		padding:0 0  50px 0;
+		@include screen(tablet) {
+			padding:40px 0 80px 0;
+		}
+	}
+	&__box{
+		padding:20px;
+		background:$white;
+		margin:0 0 20px 0;
+		@include screen(tablet) {
+			padding:35px;
+			margin:0 0 40px 0;
+		}
+	}
+	&__box__heading{
+		overflow:hidden;
+		margin:0 0 20px 0;
+		h3{
+			color:$blue;
+			font-family:$font-family-demi;
+			font-weight:normal;
+			font-size:18px;
+			float:left;
+			margin:16px 0 0 15px;
+			@include screen(tablet) {
+				font-size:24px;
+				margin:23px 0 0 20px;
+			}
+		}
+		figure{
+			width:50px;
+			height:50px;
+			float:left;
+			@include screen(tablet) {
+				width:80px;
+				height:80px;
+			}
+			img{
+				width:100%;
+				@include border-radius(50%);
+			}	
+		}
+	}
+	&__box__video{
+		margin:0 0 20px 0;
+		@include screen(tablet) {
+			margin:0 0 30px 0;
+		}
+		.video--large-container{
+			padding:0;
+			background:$white;
+		}
+	}
+	&__download{
+		border:2px solid #ebebeb;
+		&__box{
+			overflow:hidden;
+			padding:20px;
+			border-bottom:2px solid #ebebeb;
+			text-align:center;
+			@include screen(tablet) {
+				padding:18px 30px 15px 30px;
+				text-align:left;
+			}
+			&:last-child{
+				border:none;
+			}
+			h4{
+				color:$gray;
+				font-size:18px;
+				font-family:$font-family-demi;
+				font-weight:normal;
+				margin:0 0 10px 0;
+				@include screen(tablet) {
+					font-size:24px;
+					float:left;
+					margin:5px 0 0 0;
+				}
+			}
+			.btnarea{
+				@include screen(tablet) {
+					float:right;
+				}
+				.btn{
+					font-size:15px;
+					padding:0 25px;
+					height:32px;
+					display:inline-block;
+					line-height:34px;
+					font-family:$font-family;
+					min-width:150px;
+					text-align:center;
+				}
+			}
+		}	
+	}
+	&__bottom__video__box{
+		max-width:790px;
+		margin:0 auto;
+		padding:30px 0 0 0;
+		h3{
+			font-size:20px;
+			font-family:$font-family-demi;
+			font-weight:normal;
+			margin:0 0 15px 0;
+			color:$gray;
+			@include screen(tablet) {
+				font-size:28px;
+			}
+		}
+		
+	}
+}

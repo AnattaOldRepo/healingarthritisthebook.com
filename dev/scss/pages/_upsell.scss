@@ -1,0 +1,1474 @@
+.upsell{
+	&.testimonials{
+		background: #f8f8f8;
+		color: $black;
+		@include screen(tablet) {
+			padding-top: 74px;
+			padding-bottom: 113px;
+		}
+		.container{
+			padding-left: 12px;
+			max-width: 810px;
+		}
+		p{
+			@include screen(tablet) {
+				font-size: 22px;
+				line-height: 36px;
+				letter-spacing: 0.023em;
+			}
+			&.large{
+				font-family: $font-family-demi;
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 6px;
+				letter-spacing: 0.02em;
+				@include screen(tablet) {
+					font-size: 28px;
+					line-height: 44px;
+				}
+			}
+		}
+		
+		.author{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&.plan{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@include screen(tablet) {
+			padding-top: 108px;
+			padding-bottom: 95px;
+		}
+		.container{
+			position: relative;
+			&:after{
+				content: '';
+				display: block;
+				@include size(177px 181px);
+				background: url("#{$img_dir}/efgt-cooking-book-image.png") no-repeat center center;
+				@include position(absolute, null 0 0 null);
+				background-size: contain;
+				display: none;
+				@include screen(tablet) {
+					@include size(317px 324px);
+					
+				}
+				@include screen(desktop) {
+					display: block;
+					right: -39px;
+					bottom: -13px;
+				}
+			}
+		}
+		.title{
+			color: $orange;
+			font-size: 22px;
+			text-align: center;
+			font-weight: 400;
+			@include screen(tablet) {
+				text-align: left;
+				font-size: 32px;
+				line-height: 36px;
+				margin-bottom: 18px;
+			}
+		}
+		.list-dots{
+			@include screen(tablet) {
+				max-width: 660px;
+			}
+			>li{
+				font-size: 14px;
+				@include screen(tablet) {
+					font-size: 20px;
+					line-height: 44px;
+					font-weight: 400;
+				}
+				&:before{
+					top: 7px;
+					@include screen(tablet) {
+						top: 17px;
+					}
+				}
+			}
+		}
+	}
+
+	&.upsell-hero{
+		background: url("#{$img_dir}/upsell-hero.jpg") no-repeat center center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		text-align: center;
+		padding:15% 0;
+		@include screen(tablet) {
+			height:380px;
+			max-width: 1280px;
+			margin:auto;
+			padding:0;
+		}
+		@include screen(tablet-l) {
+			height:450px;
+		}
+		@include screen(desktop) {
+				height:500px;
+		}
+		.container{
+			height:auto;
+			@include screen(tablet) {
+				height:260px;
+			}
+			@include screen(tablet-l) {
+				height:320px;
+			}
+			@include screen(desktop) {
+				height:330px;
+			}
+		}
+		.upsell-challenge-content{
+			overflow:hidden;
+			
+			@include screen(tablet) {
+				
+			}
+			@include screen(tablet-l) {
+				
+			}
+			@include screen(desktop) {
+				
+			}
+			.hero--copy{
+				position:static;
+				transform: translateY(0);
+				@include screen(tablet) {
+					
+					margin-top:60px;
+				}
+				@include screen(desktop) {
+					margin-top:90px;
+				}
+				.title{
+					@include screen(tablet) {
+						font-size:28px;
+						line-height:normal;
+					}
+					@include screen(tablet-l) {
+						font-size:36px;
+						line-height:normal;
+					}	
+					@include screen(desktop) {
+						font-size:50px;
+						line-height:normal;
+					}	
+				}
+			}
+			.as-seen-on--video{
+				@include screen(tablet) {
+					float:right;
+					width:48%;
+					margin:0;
+				}
+			}
+			&.upsell-challenge-block{
+				.hero--copy{
+					@include screen(tablet) {
+						float:none;
+						width:50%;
+						margin:65px auto 0 auto;
+					}
+					.title{
+						span{
+							text-transform:uppercase;
+							display:block;
+							margin:15px 0 0 0;
+							@include screen(desktop) {
+								font-size:45px;
+							}	
+						}
+					}
+				}
+			}
+		}
+		.upsell-challenge-copy{
+			position:static;
+			transform: translateY(0);
+			.title--sub{
+				@include screen(tablet) {
+					font-size:18px;
+					line-height:normal;
+				}
+				@include screen(tablet-l) {
+					font-size:20px;
+					line-height:normal;
+				}	
+				@include screen(desktop) {
+					font-size:30px;
+					line-height:40px;
+				}	
+			}	
+		}
+		.hero--footer{
+			padding:10px;
+			@include screen(tablet) {
+				padding:15px;
+			}
+			.head{
+				@include screen(tablet) {
+					float:left;
+					width:70%;
+					margin:5px 0 0 0;
+				}
+				@include screen(desktop) {
+					margin:15px 0 0 0;
+				}
+				h4{
+					text-transform:unset;
+					line-height:normal;
+					font-size:13px;
+					font-weight:normal;
+					@include screen(tablet) {
+						font-size:18px;
+						text-align:left;
+					}
+					@include screen(desktop) {
+						font-size:24px;
+					}
+				}
+			}
+			.btnarea{
+				@include screen(tablet) {
+					float:right;
+					width:25%;
+					margin:0;
+				}
+				@include screen(desktop) {
+					margin:22px 0 0 0;
+				}
+			}
+		}	
+	}
+	&.upsell-as-seen-on{
+		@include screen(tablet) {
+			padding-bottom:0;
+		}
+		.headingtext{
+			text-align:center;
+			margin:30px 0 0 0;
+			@include screen(tablet) {
+				margin:70px 0 0 0;
+			}
+			h3{
+			
+				font-weight: 400;
+				font-size:24px;
+				line-height:32px;
+				margin:0 0 15px 0;
+				@include screen(tablet) {
+					font-size:30px;
+					line-height:40px;
+					margin:0 0 10px 0;
+				}
+			}
+			h6{
+	
+				font-size:18px;
+				line-height:28px;
+				font-weight: 400;
+				@include screen(tablet) {
+					font-size:24px;
+					line-height:34px;
+				}
+			}
+		}	
+	}
+	&.challenge{
+		border-bottom:4px solid #e1e1e1;
+		padding:30px 0;
+		@include screen(tablet) {
+			padding:50px 0 60px 0;
+		}
+		@include screen(tablet-l) {
+			padding:80px 0 90px 0;
+		}
+		hgroup{
+			margin:0 0 30px 0 ;
+			text-align:center;
+			@include screen(tablet) {
+				margin:0 0 40px 0;
+			}
+			p {
+			    font-size: 16px;
+			    line-height: 28px;
+			    @include screen(tablet) {
+			    	font-size: 24px;
+			    	line-height: 32px;	
+			    }
+			    @include screen(tablet-l) {
+					padding:0 100px;
+			    }
+			}
+		}
+		ul{
+			max-width:800px;
+			margin:0 auto;
+			li {
+				strong{
+					font-family:$font-family-demi;
+				}
+			}
+		}
+	}
+	&.upsell-testimonials{
+		.testimonials__slider{
+			background:none;
+		}
+		.testimonials__slider-item{
+			height:auto;
+		}
+	}
+}
+
+.upsell_block{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	@include screen(tablet) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@include screen(desktop) {
+		padding-top: 104px;
+		padding-bottom: 102px;
+	}
+	h2{
+		font-size: 22px;
+		text-align: center;
+		font-family: $font-family-demi;
+		margin-bottom: 31px;
+		@include screen(tablet) {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+	}	
+}
+.upsell_chart_main{
+	max-width:960px;
+	margin:0 auto;
+	padding:0 10px;
+	@include screen(tablet) {
+		padding:30px 20px;
+	}
+	@include screen(desktop) {
+		padding:30px 0;
+	}	
+	.upsell_chart_row{
+		@include screen(tablet) {
+			margin:0 -10px;
+			overflow:hidden;
+		}	
+	}
+	.upsell_chart_box{
+		padding:0 10px;
+		margin:0 0 20px 0;
+		@include screen(tablet) {
+			float:left;
+			width:50%;
+		}
+		&.plus{
+			.upsell_chart_box_content{
+				background:#f7f7f7;
+			}
+			.headingtop{
+				border-color:$orange;
+			}
+			.btn{
+				background:$orange;
+				&:hover{
+					background-color: darken($orange, 10%);
+				}
+			}
+
+			h6 {
+				color: $orange;
+			}
+
+			h4 span {
+				color: $orange;
+			}
+		}
+	}
+	.upsell_chart_box_content{
+		border:2px solid #e5ecef;
+		@include border-radius(2px);
+		figure{
+			margin:0 0 20px 0;
+			text-align:center;
+			img{
+				max-width:80%;
+				@include screen(tablet) {
+					max-width:60%;
+				}
+			}
+		}
+	}
+	.upsell_chart_heading{
+		padding:20px;
+		text-align:center;
+		@include screen(tablet) {
+			padding:40px 20px;
+		}
+		.btn{
+			background:$purpol;
+			&:hover{
+				background-color: darken($purpol, 10%);
+			}
+		}
+		&.headingtop{
+			border-top:15px solid #ebeff3;
+			@include border-radius(2px);
+			@include screen(tablet) {
+				border-width:22px;
+			}
+			
+		}
+		h4{
+	
+			font-size:20px;
+			font-weight: 400;
+			margin:0 0 15px 0;
+			@include screen(tablet) {
+				font-size:30px;
+				margin:0 0 20px 0;
+			}
+			span{
+				color:$green;
+			}
+		}
+		.upsell-btn-area{
+			span{
+				font-size:18px;
+				font-family:$font-family-demi;
+				@include screen(tablet) {
+					font-size:24px;
+					padding:0 8px 0 0;
+					position:relative;
+					top:3px;
+				}
+			}
+			.btn{
+				@include screen(tablet) {
+					font-size:20px;
+					height:50px;
+					line-height:52px;
+					padding:0 45px;
+					margin:0 0 0 8px;
+				}
+			}
+		}
+	}
+	.upsell_chart_content{
+		border-bottom:1px solid #f1f1f1;
+		padding:10px 0;
+		@include screen(desktop) {
+			min-height:960px;
+		}
+		h6{
+			color:$purpol;
+			font-size:16px;
+			line-height:24px;
+			font-weight:400;
+			text-transform:uppercase;
+			font-weight:normal;
+			margin:0 0 15px 0;
+		}
+		ul{
+			li{
+				font-size:16px;
+				line-height:22px;
+				margin:0 0 10px 0;
+				padding:0 0 0 22px;
+				position:relative;
+				&:after{
+					content: '';
+					display: block;
+					background: url("#{$img_dir}/check-icon.svg") no-repeat center center;
+					width:14px;
+					height:14px;
+					background-size:14px auto;
+					@include position(absolute, 3px null null 0);
+				}
+				&.close{
+					&:after{
+						background: url("#{$img_dir}/close-icon.svg") no-repeat center center;
+						width:12px;
+						height:12px;
+						background-size:12px auto;
+						@include position(absolute, 4px null null 0);
+					}	
+				}
+			}
+		}
+		article{
+			padding:0 15px 30px 15px;
+			@include screen(tablet) {
+				padding:0 35px 30px 35px;
+			}
+		}
+	}
+	.upsell-preptext{
+		padding:20px 0 0 0;
+		text-align:center;
+		font-size:18px;
+		line-height:28px;
+		@include screen(tablet) {
+			padding:60px 0 0 0;
+			font-size:30px;
+			line-height:32px;
+		}
+		p{
+			padding:10px 0 0 0;
+			a{
+				color:$orange;
+			}
+		}
+	}
+	.upsell-notfitfor{
+		margin:0 auto;
+		padding:20px 0 0 0;
+		max-width:420px;
+		color:$blue;
+		text-align:center;
+		p{
+			padding:0 0 10px 0;
+			font-size:18px;
+			font-weight: 400;
+			
+		}
+		ol{
+			margin:0;
+			padding:0;
+			list-style:decimal;
+			li{
+				font-size:15px;
+				padding:0 0 15px 0;
+				list-style-position:inside;
+			}
+		}
+	}
+}
+
+.hero{
+	position: relative;
+	@include size(100% auto);
+	color: $white;
+	overflow: hidden;
+	@include screen(tablet) {
+		height: 427px
+	}
+	@include screen(desktop) {
+		height: 627px
+	}
+	&:before{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		@include margin(auto);
+		background: url("#{$img_dir}/upsell-hero.jpg") no-repeat center center $blue;
+		background-size: cover;
+		@include size(100%);
+	}
+	.container{
+		position: relative;
+		z-index: 1;
+		height: 250px;
+		@include screen(tablet) {
+			height: 313px;
+		}
+		@include screen(desktop) {
+			height: 503px;
+		}
+	}
+	&--copy{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		.title{
+			font-size: 26px;
+			line-height: 30px;
+			@include screen(tablet) {
+				font-size: 36px;
+				line-height: 50px;
+				margin-bottom: 28px;
+			}
+			@include screen(desktop) {
+				font-size: 56px;
+				line-height: 64px;
+				margin-bottom: 48px;
+			}
+			&--sub{
+				letter-spacing: 0.01em;
+				font-size: 18px;
+				line-height: 22px;
+				@include screen(tablet) {
+					font-size: 22px;
+					line-height: 32px;
+				}
+				@include screen(desktop) {
+					font-size: 32px;
+					line-height: 43px;
+				}
+			}
+			i{
+				font-family: $font-family-lt;
+			}
+		}
+	}
+	&--link{
+		@include screen(tablet) {
+			position: absolute;
+			right: 50px;
+			bottom: -24px;
+		}
+		@include screen(desktop) {
+			bottom: -28px;
+		}
+	}
+	&--footer{
+		@include padding(15px 10px);
+		border-bottom:10px solid $orange;
+		position: relative;
+		@include screen(tablet) {
+			@include padding(33px 10px 44px);
+			border-bottom:27px solid $orange;
+		}
+		.container{
+			position: relative;
+			height: auto;
+		}
+		.head {
+			text-align: center;
+		}
+		a{
+			color: $white;
+			font-family: $font-family-demi;
+			font-size: 16px;
+			@include screen(desktop) {
+				font-size: 20px;
+			}
+			&:hover{
+				color: $white;
+			}
+		}
+		.btn{
+			color: $white;
+			@include padding(0 15px);
+			margin-right: 10px;
+			@include screen(tablet) {
+			    margin-left: 15px;
+				margin-right: 0;
+				@include padding(0 20px);
+				line-height: 48px;
+			}
+			@include screen(desktop) {
+			    margin-left: 36px;
+				margin-right: 0;
+				@include padding(0 37px);
+			}
+		}
+		h4{
+			font-family: $font-family-demi;
+			font-size: 16px;
+			line-height: 26px;
+			text-transform: uppercase;
+			letter-spacing: 0.055em;
+			display: block;
+			margin-bottom: 10px;
+			@include screen(tablet) {
+				display: inline-block;
+				margin-bottom: 0;
+				line-height: 48px;
+			}
+			@include screen(desktop) {
+				font-size: 20px;
+				
+			}
+		}
+	}
+}
+
+.as-seen-on{
+	padding-top: 42px;
+	padding-bottom: 43px;
+	@include screen(tablet) {
+		padding-top: 82px;
+		padding-bottom: 93px;
+	}
+	&--copy{
+		max-width: 740px;
+		@include margin(null auto 40px);
+		@include screen(tablet) {
+			margin-bottom: 70px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 0.025em;
+			@include screen(tablet) {
+				font-size: 24px;
+				line-height: 44px;
+			}
+		}
+	}
+	&--video{
+		max-width: 607px;
+		padding: 8px;
+		@include margin(0 auto 42px);
+		@include screen(tablet) {
+			margin-bottom: 92px;
+		}
+		background-color: rgba($blue, .05);
+		.video{
+			border: 0;
+			margin: 0;
+			padding-bottom: 51.3%;
+		}
+	}
+	&--logos{
+		border-top: 1px solid $border-color;
+		border-bottom: 1px solid $border-color;
+		font-size: 0;
+		position: relative;
+		max-width: 816px;
+		@include margin(null auto);
+		>h3{
+			@include position(absolute, -5px 0 null 0);
+			font-size: 11px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: center;
+			z-index: 9;
+			@include screen(tablet) {
+				font-size: 13px;
+				top: -7px;
+			}
+			span{
+				padding: 6px;
+				letter-spacing: 0.09em;
+				background-color: $white;
+				@include screen(tablet) {
+					padding: 10px;
+				}
+			}
+		}
+		.logos{
+			overflow: hidden;
+		}
+	}
+}
+
+.success-keys{
+	border-top: 4px solid $border-color;
+	border-bottom: 4px solid $border-color;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	@include screen(tablet) {
+		padding-top: 85px;
+		padding-bottom: 90px;
+	}
+	.title{
+		margin-bottom: 27px;
+		font-size: 22px;
+		@include screen(tablet) {
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 47px;
+		}
+	}
+	.btn{
+		font-size: 20px;
+		line-height: 48px;
+		max-width: 210px;
+		width: 100%;
+	}
+}
+
+.media{
+	margin-bottom: 35px;
+	@media (min-width:768px){
+		margin-bottom: 57px;
+	}
+	&-image{
+		@include margin(0 auto 20px);
+
+		@media (max-width:767px){
+			margin-bottom:0;
+		}
+		
+		overflow: hidden;
+		@include border-radius(50%);
+		background-clip: padding-box;
+		color: #fff;
+		font-size: 93px;
+		@include screen(tablet) {
+	
+			margin-bottom: 23px;
+		}
+		@include screen(desktop) {
+			
+		}
+		i{
+		    margin: auto;
+		    transform: translateY(-50%);
+		    position: relative;
+		    top: 50%;
+		    display: block;
+		}
+	}
+	.icon{
+		&-articles{
+			font-size: 45px;
+			padding-left: 3px;
+			margin-top: -2px;
+			@include screen(tablet) {
+				font-size: 85px;
+			}
+			@include screen(desktop) {
+				font-size: 115px;
+			}
+		}
+		&-community{
+			font-size: 68px;
+			@include screen(tablet) {
+				font-size: 108px;
+			}
+			@include screen(desktop) {
+				font-size: 138px;
+			}
+		}
+		&-support{
+			font-size: 62px;
+			@include screen(tablet) {
+				font-size: 112px;
+				margin-left: -3px;
+			}
+			@include screen(desktop) {
+				font-size: 142px;
+				margin-left: 0;
+			}
+		}
+	}
+	&-copy{
+		margin-bottom: 8px;
+		h3{
+			font-size: 18px;
+			line-height: 38px;
+			font-weight: 400;
+			@include screen(tablet) {
+				font-size: 24px;
+				line-height: 64px;
+			}
+		}
+		.copy {
+		    font-family: $font-family-demi;
+		    max-width: 290px;
+		    @include margin(null auto);
+		    line-height: 20px;
+		    @include screen(tablet) {
+		    	font-size: 17px;
+		    	line-height: 24px;
+		    	max-width: 390px;
+		    }
+		    @include screen(desktop) {
+		    	padding: 0 30px;
+		    }
+		}
+	}
+}
+.what-included-tabs{
+	padding-top: 64px;
+	@include screen(tablet) {
+		padding-top: 114px;
+	}
+	h2{
+		font-size: 22px;
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 31px;
+		@include screen(tablet) {
+			font-size: 40px;
+			margin-bottom: 61px;
+		}
+	}
+}
+
+.what-included{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $border-color;
+	@include screen(tablet) {
+		padding-top: 102px;
+		padding-bottom: 60px;
+	}
+	h2{
+		font-size: 22px;
+		text-align: center;
+		font-family: $font-family-demi;
+		margin-bottom: 31px;
+		@include screen(tablet) {
+			font-size: 40px;
+			margin-bottom: 68px;
+		}
+	}
+	.col--two .col{
+		@include screen(tablet) {
+			width: 50%;
+		}
+	}
+}
+.product{
+	margin-bottom: 40px;
+	@include screen(tablet) {
+		margin-bottom: 80px;
+	}
+	&-image{
+		text-align: center;
+		margin-bottom: 5px;
+		@include screen(tablet) {
+			margin-bottom: 10px;
+		}
+	}
+	&-info{
+		max-width: 275px;
+		margin: 0 auto;
+		@include screen(desktop) {
+			max-width: 387px;
+		}
+		h3{
+			font-size: 18px;
+			line-height: 34px;
+			text-align: center;
+			font-family: $font-family-demi;
+			@include screen(tablet) {
+				font-size: 20px;
+			}
+			@include screen(desktop) {
+				font-size: 24px;
+				line-height: 64px;
+			}
+		}
+		p{
+			font-size: 13px;
+			line-height: 22px;
+			font-family: $font-family-demi;
+			@include screen(tablet) {
+				font-size: 14px;
+				line-height: 22px;
+			}
+			@include screen(desktop) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+.result{
+	padding-top: 60px;
+	padding-bottom: 32px;
+	text-align: center;
+	@include screen(tablet) {
+		padding-top: 90px;
+		padding-bottom: 72px;	
+	}
+	h2{
+		font-size: 22px;
+    	line-height: 26px;
+		font-weight: 400;
+		margin-bottom: 13px;
+		@include screen(tablet) {
+			font-size: 42px;
+			line-height: 56px;
+		}
+	}
+	h4{
+		font-size: 16px;
+	    line-height: 21px;
+	    margin-bottom: 13px;
+	    font-weight: 400;
+	    @include screen(tablet) {
+    		font-size: 22px;
+    	    line-height: 28px;
+    	    margin-bottom: 32px;
+	    }
+	}
+	.container{
+		max-width: 1030px;
+		@include padding(null 15px);
+	}
+	.member-image {
+		@include margin(null auto 30px);
+	    display: block;
+	    background: url("#{$img_dir}/result-member.jpg") no-repeat center center;
+	    max-width: 320px;
+	    width: 100%;
+	    height: 62px;
+	    background-size: contain;
+	    @include screen(tablet) {
+	    	@include size(644px 62px);
+	    	max-width: inherit;
+	    	background-size: cover;
+	    	margin-bottom: 76px;
+	    }
+	    
+	}
+	.row{
+		@include screen(tablet) {
+			@include margin(null -15px);
+		}
+		.col{
+			width: 100%;
+			@include screen(tablet) {
+				@include padding(null 15px);
+				width: 25%;
+			}
+		}
+	}
+	&-copy{
+		font-family: $font-family-demi;
+		margin-bottom: 20px;
+		@include screen(tablet) {
+			margin-bottom: 0;
+		}
+		h5 {
+			font-family: $font-family-bold;
+		    text-transform: uppercase;
+		    font-size: 13px;
+		    position: relative;
+		    letter-spacing: 0.05em;
+		    @include screen(tablet) {
+		    	font-size: 15px;
+		    }
+		    &:after {
+		    	@include size(30px 1px);
+		    	@include margin(5px auto);
+			    display: block;
+			    content: '';
+			    background-color: $border-color;
+			    @include screen(tablet) {
+			    	@include margin(10px auto);
+			    }
+			}
+		}
+		.large {
+		    
+		    color: $orange;
+		    display: block;
+		    margin-bottom: 13px;	
+		    font-size: 18px;
+		    @include screen(tablet) {
+		    	margin-bottom: 16px;	
+		    	font-size: 32px;
+		    }
+		}
+	}
+	p{
+	    font-size: 13px;
+	    line-height: 17px;
+	    margin-bottom: 10px;
+		@include screen(tablet) {
+			margin-bottom: 15px;
+			font-size: 15px;
+			line-height: 18px;
+		}
+	}
+}
+.product-includes{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	@include screen(tablet) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	@include screen(desktop) {
+		padding-top: 104px;
+		padding-bottom: 102px;
+	}
+	h2{
+		font-size: 22px;
+		text-align: center;
+		font-family: $font-family-demi;
+		margin-bottom: 31px;
+		@include screen(tablet) {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+	}	
+	.bottom-cta{
+	    max-width: 1150px;
+	    margin: 0 auto;
+	    position: relative;
+	    min-height: 429px;
+	    @include screen(tablet) {
+	    	padding-top: 30px;
+	    }
+	    @include screen(desktop) {
+	    	padding-top: 0;
+	    }
+	    &:before{
+    	    content: '';
+    	    display: block;
+    	    background: url("#{$img_dir}/product-kit.png") no-repeat center center;
+    	    background-size: contain;
+    	    @include margin(0 auto 20px);
+    	    height: 230px;
+    	    @include screen(tablet) {
+				@include size(355px 333px);
+    	    }
+    	    @include screen(desktop) {
+    	    	@include position(absolute, 77px null null 130px);
+    	    }
+	    }
+	}
+	article{
+		position: relative;
+		z-index: 1;
+		text-align: left;
+		padding-top: 18px;
+		max-width: 310px;
+		@include margin(null auto);
+		@include screen(tablet) {
+			margin-right: initial;
+			padding-top: 38px;
+			padding-left: 20px;	
+			height: 278px;
+			max-width: inherit;
+		}
+		@include screen(desktop) {
+			max-width: 550px;
+			margin-left: auto;
+			padding-left: 47px;	
+			height: 408px;
+		}
+		h3{
+			font-family: $font-family-demi;
+			text-transform: uppercase;
+			font-size: 16px;
+			margin-bottom: 10px;
+			@include screen(tablet) {
+				font-size: 17px;
+				margin-bottom: 20px;
+			}
+		}
+		.price{
+			text-align: center;
+			max-width: 312px;
+			margin-bottom: 19px;
+			@include screen(tablet) {
+				float: left;
+				margin-left: 20px;
+			}
+			@include screen(desktop) {
+				float: none;
+				margin-left: 0;
+				padding-top: 30px;
+			}
+			span{
+				font-size: 24px;
+				display: block;
+				font-family: $font-family-demi;
+				color: $blue;
+				margin-bottom: 24px;
+				@include screen(tablet) {
+					font-size: 36px;	
+				}
+			}
+			.btn{
+				width: 100%;
+				max-width: 230px;
+				margin-bottom: 32px;
+				line-height: 48px;
+				font-size: 20px;
+			}
+			small{
+				font-size: 13px;
+				display: block;
+				font-family: $font-family-demi;
+				color: $blue;
+				@include screen(tablet) {
+					font-size: 17px;	
+				}
+				a{
+					color: $blue;
+					text-decoration: none;
+					&:hover{
+						color: darken($blue, 10%);
+					}
+				}
+			}
+		}
+		.list-dots{
+			@include screen(tablet) {
+				float: left;
+				width: 50%;
+			}
+			@include screen(desktop) {
+				width: auto;
+				float: none;
+			}
+			>li{
+				margin-bottom: 15px;
+				font-size: 14px;
+				line-height: 18px;
+				@include screen(tablet) {
+					padding-left: 16px;
+					font-size: 18px;
+				}
+				&:before{
+					@include screen(tablet) {
+						top: 5px;
+						@include size(6px);
+					}
+				}
+			}
+		}
+	}
+}
+.drh_lesson{
+	&_downloads{
+		&-item{
+			@include clearfix();
+			overflow: hidden;
+			padding:10px 0 50px 0;
+			h2{
+				margin-bottom: 34px;
+			}
+		}
+		&-list{
+			margin: 0 0;
+			padding: 0;
+			border-top: 1px solid #ececec;
+			li{
+				height: 48px;
+				position: relative;
+				padding-right: 144px;
+				display: block;
+				border-bottom: 1px solid #ececec;
+				background-color: #fff;
+				padding-left: 13px;
+				letter-spacing: 0.01em;
+				@include screen(mobile-m) {
+					padding-right: 45px;
+					display: table;
+					height: 48px;
+					width: 100%;
+					overflow: hidden;
+				}
+				&:hover{
+					background:#fafafa;
+					.btn{
+						@include border-radius(20px);
+						width: 123px;
+						padding-left: 15px;
+						@include screen(mobile-m) {
+							width: 23px;
+							padding: 0 3px;
+						}
+						.menuicon-downloads{
+							margin-right: 6px;
+							@include screen(mobile-m) {
+								margin:0;
+							}
+						}
+						span{
+							color:$green;
+							opacity:1;
+							&:hover{
+								color:$white;
+							}
+						}
+					}
+				}
+				.file-name{
+					font-size: 16px;
+					line-height: 24px;
+					//font-family: $pt-sans;
+					color: #464646;
+					vertical-align: top;
+					display: inline-block;
+					position: relative;
+					top: 50%;
+					@include transform(translateY(-50%));
+					padding-top: 2px;
+					@include screen(mobile-m) {
+						 display: table-cell;
+						 vertical-align: middle;
+						top: 0;
+						position: static;
+						@include transform(none);
+						padding: 5px 0;
+					}
+				}
+				.btn{
+					min-width:inherit;
+					position: absolute;
+					top: 7px;
+					right: 17px;
+					@include border-radius(20px);
+					width: 32px;
+					height: 32px;
+					padding: 0 6.5px;
+					text-align: center;
+					overflow: hidden;
+					background:none;
+					line-height:30px;
+					font-weight:normal;
+					border:1px solid $green;
+					color:$green;
+					font-family:$font-family;
+					@include transition(all .3s ease-in-out);
+					@include screen(tablet-m) {
+						width: 123px;
+						padding-left: 15px;
+						color:$green;
+					}
+					@include screen(mobile-m) {
+						width: 23px;
+						height: 23px;
+						line-height:22px;
+						top: 13px;
+						right: 15px;
+						padding: 0 3px;
+					}
+					.menuicon-downloads{
+						display: inline-block;
+						vertical-align: top;
+						padding-top: 8px;
+						font-size:16px;
+						@include screen(tablet-m) {
+							margin-right: 6px;
+						}
+						@include screen(mobile-m) {
+							padding-top: 3px;
+							margin:0;
+							font-size:15px;
+						}
+					}
+					span{
+						vertical-align: top;
+						display: inline-block;
+						padding-top: 1px;
+						font-size:14px;
+						opacity:0;
+						font-weight:normal;
+						//@include transition(all .3s ease-in-out);
+						@include screen(tablet-m) {
+							color:$green;
+							opacity:1;
+						}
+						@include screen(mobile-m) {
+							display: none;
+							font-size:12px;
+						}
+					}
+					&:hover{
+						width: 123px;
+						padding-left: 15px;
+						background:$green;
+						color:$white;
+						@include screen(mobile-m) {
+							width: 23px;
+							padding: 0 3px;
+						}
+						.menuicon-downloads{
+							margin-right: 6px;
+							@include screen(mobile-m) {
+								margin:0;
+							}
+						}
+						.btn{
+							text-align: center;
+						}
+						span{
+							opacity:1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.upsell-challange-mailchimp{
+	padding:50px 0 0px 0;
+	@include screen(mobile-m) {
+		padding:20px 0 0 0;
+	}
+	.challange-mailchimp-content{
+		max-width:670px;
+		margin:0 auto;
+		h4{
+			color:$blue;
+			font-family:$font-family-demi;
+			font-size:24px;
+			line-height:36px;
+			font-weight:normal;
+			@include screen(mobile-m) {
+				font-size:18px;
+				line-height:28px;
+			}
+		}
+	}
+	.challange-mailchimp-form{
+		max-width:400px;
+		margin:0 auto;
+		padding:30px 0;
+	}
+}
+
+.upsell-head h4 {
+	text-transform:none;
+	font-weight:500;
+	letter-spacing:1px;
+}
+
+.c-bestSeller {
+	background-color:#fcfcfc;
+	text-align:center;
+	@media (min-width:1024px){
+		padding:20px 0;
+		margin-top: 90px;
+		margin-bottom: 16px;
+	}
+	.container {
+
+		@media (min-width:1024px){
+			display: flex;
+			align-items:center;
+			justify-content: space-around;
+		}
+
+	}
+
+	h3 {
+		font-size: 24px;
+		font-weight: 400;
+		padding-bottom:30px;
+	}
+
+	&__col {
+		flex-grow: 1;
+		@media (max-width:1023px){
+			margin-bottom: 20px;
+		}
+
+	}
+	&__book {
+		max-width: 130px;
+	}
+	&__amazon {
+		max-width: 180px;
+	}
+}
