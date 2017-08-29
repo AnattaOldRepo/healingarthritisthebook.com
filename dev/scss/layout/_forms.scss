@@ -37,7 +37,25 @@
 }
 
 .mc-field-group{
-	margin-bottom: 14px;
+	margin-bottom: 25px;
+	position: relative;
+
+	.ctct-form-errorMessage {
+		position: absolute;
+		color: red;
+		font-size: 12px;
+		top:40px;
+	}
+}
+
+.signUpBtn {
+	position: absolute;
+    bottom: -30%;
+
+    @media(max-width:767px){
+    	bottom:-53%;
+    	width: 94% !important;
+    }
 }
 
 #mc_embed_signup input.mce_inline_error{

@@ -43,7 +43,7 @@ jQuery.noConflict();
             return false;
           }
         }
-      });
+      });           
 
     $( function () {
 

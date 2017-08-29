@@ -2381,7 +2381,27 @@ img {
 }
 
 .mc-field-group {
-  margin-bottom: 14px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.mc-field-group .ctct-form-errorMessage {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  top: 40px;
+}
+
+.signUpBtn {
+  position: absolute;
+  bottom: -30%;
+}
+
+@media (max-width: 767px) {
+  .signUpBtn {
+    bottom: -53%;
+    width: 94% !important;
+  }
 }
 
 #mc_embed_signup input.mce_inline_error {
@@ -3704,11 +3724,12 @@ img {
 }
 
 .bonus__steps {
-  overflow: hidden;
+  position: relative;
   border-bottom: 1px solid #e1e1e1;
   padding: 20px;
   font-size: 14px;
   font-family: "Work Sans", sans-serif;
+  min-height: 150px;
 }
 
 .bonus__steps::after {

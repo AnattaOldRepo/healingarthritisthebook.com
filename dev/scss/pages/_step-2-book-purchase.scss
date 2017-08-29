@@ -370,11 +370,12 @@
 .bonus{
 	&__steps{
 		@include clearfix();
-		overflow: hidden;
+		position:relative;
 		border-bottom: 1px solid $border-color;
 		@include padding(20px);
 		font-size: 14px;
 		font-family: $font-family-demi;
+		min-height: 150px;
 		@include screen(tablet) {
 			@include padding(48px 50px 42px);
 			display: table;
