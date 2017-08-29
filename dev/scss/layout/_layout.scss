@@ -8,7 +8,7 @@
 	@include margin(null auto);
 	@include padding(0 12px);
 	@include clearfix();
-	
+
 	@include screen(tablet) {
 		max-width: 1020px;
 		@include padding(0 30px);
@@ -142,7 +142,7 @@
 	&--small-container{
 		@include margin(null auto);
 		background-color: rgba($blue, .5);
-		@include padding(8px);	
+		@include padding(8px);
 		.video{
 			border: 0;
 			margin: 0;
@@ -172,6 +172,9 @@
 			display: inline-block;
 			text-align: left;
 		}
+	}
+	.efgt-as-seenon-logo {
+		max-width: 760px;
 	}
 }
 
@@ -206,12 +209,12 @@
 					width: auto;
 				}
 				@include screen(desktop) {
-					padding: 0 64px;	
+					padding: 0 64px;
 				}
 				a{
 					@include transition(all 0.3s ease);
-					
-					
+
+
 					color: $purpol;
 					text-decoration: none;
 					text-transform: uppercase;
@@ -231,7 +234,7 @@
 						min-height: inherit;
 					}
 					&:hover{
-						border-bottom-color: $purpol;	
+						border-bottom-color: $purpol;
 					}
 				}
 				&.is-open{
@@ -248,30 +251,30 @@
 			}
 		}
 		.icon{
-	
+
 			&-articles{
 				margin-top: 10px;
    				max-width: 15px;
    				margin-right: 8px;
-			
+
 			}
 			&-recipes{
-		
-				
+
+
 					margin-right: 8px;
 					max-width: 25px;
-					margin-top: 8px;	
-				
+					margin-top: 8px;
+
 			}
 			&-support{
-				
-				
+
+
 					margin-right: 8px;
 					max-width: 20px;
-					margin-top: 11px;	
-				
+					margin-top: 11px;
+
 			}
-		
+
 		}
 	}
 	&-content{
@@ -315,7 +318,7 @@
 .info-image{
 	max-width: 1078px;
 	margin: 0 auto;
-	padding-top: 12px;	
+	padding-top: 12px;
 }
 
 .bg-home{

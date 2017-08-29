@@ -2050,6 +2050,10 @@ img {
   }
 }
 
+.efgt-as-seenon .efgt-as-seenon-logo {
+  max-width: 760px;
+}
+
 .tab {
   display: none;
 }
