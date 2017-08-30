@@ -6041,6 +6041,7 @@ img {
 @media only screen and (min-width: 768px) {
   .result-copy h5 {
     font-size: 15px;
+    min-height: 50px;
   }
 }
 
@@ -7427,6 +7428,10 @@ img {
 
 .woocommerce-tabs .wc-tab ul li {
   list-style-type: none;
+}
+
+.price-tag {
+  margin-top: 10px;
 }
 
 .affiliate.partner-center {

@@ -1050,6 +1050,7 @@
 		    letter-spacing: 0.05em;
 		    @include screen(tablet) {
 		    	font-size: 15px;
+		    	min-height: 50px;
 		    }
 		    &:after {
 		    	@include size(30px 1px);
