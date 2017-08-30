@@ -1910,7 +1910,7 @@ img {
 }
 
 .bg-wood.bonus-delivery {
-  background: url("../images/meditation.jpg") no-repeat top center;
+  background: url("../images/meditation.jpg") no-repeat bottom left;
   background-size: cover;
 }
 
@@ -3970,14 +3970,16 @@ img {
   .testimonials {
     background-image: url("../images/figs-2.jpg");
     background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: contain;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .testimonials .container {
-    padding-left: 253px;
+    padding: 50px;
+    background-color: #fff;
+    opacity: 0.95;
   }
 }
 
@@ -3993,7 +3995,7 @@ img {
 
 @media only screen and (min-width: 1025px) {
   .testimonials .title {
-    text-align: left;
+    text-align: center;
   }
 }
 

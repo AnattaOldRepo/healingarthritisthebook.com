@@ -540,14 +540,16 @@
 	@include screen(desktop) {
 		background-image: url("#{$img_dir}/figs-2.jpg");
 		background-repeat:no-repeat;
-		background-position: left bottom;
-		background-size:contain;
+		background-position: center center;
+		background-size:cover;
 
 
 	}
 	.container{
 		@include screen(desktop) {
-			padding-left: 253px;
+			padding:50px;
+			background-color:#fff;
+			opacity: 0.95;
 		}
 	}
 	.title{
@@ -556,7 +558,7 @@
 			margin-bottom: 50px;
 		}
 		@include screen(desktop) {
-			text-align: left;
+			text-align: center;
 		}	
 	}
 	blockquote{
