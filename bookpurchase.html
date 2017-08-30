@@ -140,41 +140,61 @@
                     <span id="success_message" style="display:none;">
                        <div style="text-align:center;">Thanks for signing up!</div>
                    </span>
+              
                    <form data-id="embedded_signup:form" class="ctct-custom-form Form form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
                        <p></p>
                        <!-- The following code must be included to ensure your sign-up form works properly. -->
                        <input data-id="ca:input" type="hidden" name="ca" value="b65690f9-2781-4d12-aac7-4863570a46fc">
                        <input data-id="list:input" type="hidden" name="list" value="1387570779">
                        <input data-id="source:input" type="hidden" name="source" value="EFD">
-                       <input data-id="required:input" type="hidden" name="required" value="list,email">
+                       <input data-id="required:input" type="hidden" name="required" value="list,cf_text--0,cf_text--1,email">
                        <input data-id="url:input" type="hidden" name="url" value="">
                        <div class="mc-field-group">
-                        <p data-id="Email Address:p" ><label data-id="Email Address:label" data-name="email" class="ctct-form-required"></label> <input data-id="Email Address:input" type="text" name="email" value="" placeholder="Email address" maxlength="80"></p>
+                       <p data-id="Email Address:p" ><label data-id="Email Address:label" data-name="email" class="ctct-form-required"></label> <input data-id="Email Address:input" type="text" name="email" placeholder="Email Address" value="" maxlength="80"></p>
+                       </div>
+                       <div class="mc-field-group">
+                       <p data-id="First Name:p" ><label data-id="First Name:label" data-name="first_name"></label> <input data-id="First Name:input" type="text" name="first_name" value="" placeholder="First Name" maxlength="50"></p>
+                       </div>
+                      
+                       <div class="mc-field-group mc-field-group-half mc-field-group-half--first">
+                        <p data-id="Number Of Books:p">
+                          <label data-id="Number Of Books:label" data-name="cf_text_value--0" class="ctct-form-required"></label>
+                            <input data-id="Number Of Books_value:input" type="text" placeholder="Number Of Books" name="cf_text_value--0" value="">
+                        </p>
+
+                        <input data-id="Number Of Books_name:input" type="hidden" name="cf_text_name--0" value="number_of_books">
+                        <input data-id="Number Of Books_label:input" type="hidden" name="cf_text_label--0" value="Number Of Books">
                         </div>
-                        <div class="mc-field-group">
-                        <p data-id="First Name:p" ><label data-id="First Name:label" data-name="first_name"></label> <input data-id="First Name:input" placeholder="First Name" type="text" name="first_name" value="" maxlength="50"></p>
-                        </div>
-                        <div class="form-button">
-                            <button type="submit" id="BtnTarget" class="button signUpBtn btn btn--primary Button ctct-button Button--block Button-secondary" data-enabled="enabled">I Want My FREE Gifts!</button>
-                        </div>
+                        <div class="mc-field-group mc-field-group-half">
+                        <p data-id="Order Number:p">
+                          <label data-id="Order Number:label" data-name="cf_text_value--1" class="ctct-form-required"></label>
+                          <input data-id="Order Number_value:input" placeholder="Order Number" type="text" name="cf_text_value--1" value="">
+                        </p>
+
+                          <input data-id="Order Number_name:input" type="hidden" name="cf_text_name--1" value="order_number"><input data-id="Order Number_label:input" type="hidden" name="cf_text_label--1" value="Order Number"> 
+                       </div>
+                      <div class="form-button">       
+                        <button type="submit" class="button signUpBtn btn btn--primary Button ctct-button Button--block Button-secondary" data-enabled="enabled">I Want My FREE Gifts!</button>
+                      </div>
                    </form>
+                   
                    <script type='text/javascript'>
-                       var localizedErrMap = {};
-                       localizedErrMap['required'] = 'This field is required.';
-                       localizedErrMap['ca'] = 'An unexpected error occurred while attempting to send email.';
-                       localizedErrMap['email'] = 'Please enter your email address in name@email.com format.';
-                       localizedErrMap['birthday'] = 'Please enter birthday in MM/DD format.';
-                       localizedErrMap['anniversary'] = 'Please enter anniversary in MM/DD/YYYY format.';
-                       localizedErrMap['custom_date'] = 'Please enter this date in MM/DD/YYYY format.';
-                       localizedErrMap['list'] = 'Please select at least one email list.';
-                       localizedErrMap['generic'] = 'This field is invalid.';
-                       localizedErrMap['shared'] = 'Sorry, we could not complete your sign-up. Please contact us to resolve this.';
-                       localizedErrMap['state_mismatch'] = 'Mismatched State/Province and Country.';
-                    localizedErrMap['state_province'] = 'Select a state/province';
-                       localizedErrMap['selectcountry'] = 'Select a country';
-                       var postURL = 'https://visitor2.constantcontact.com/api/signup';
-                    </script>
-                    <script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
+                     var localizedErrMap = {};
+                     localizedErrMap['required'] = 'This field is required.';
+                     localizedErrMap['ca'] = 'An unexpected error occurred while attempting to send email.';
+                     localizedErrMap['email'] = 'Please enter your email address in name@email.com format.';
+                     localizedErrMap['birthday'] = 'Please enter birthday in MM/DD format.';
+                     localizedErrMap['anniversary'] = 'Please enter anniversary in MM/DD/YYYY format.';
+                     localizedErrMap['custom_date'] = 'Please enter this date in MM/DD/YYYY format.';
+                     localizedErrMap['list'] = 'Please select at least one email list.';
+                     localizedErrMap['generic'] = 'This field is invalid.';
+                     localizedErrMap['shared'] = 'Sorry, we could not complete your sign-up. Please contact us to resolve this.';
+                     localizedErrMap['state_mismatch'] = 'Mismatched State/Province and Country.';
+                  localizedErrMap['state_province'] = 'Select a state/province';
+                     localizedErrMap['selectcountry'] = 'Select a country';
+                     var postURL = 'https://visitor2.constantcontact.com/api/signup';
+                  </script>
+                  <script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
                     
                   </div>
                 </div>

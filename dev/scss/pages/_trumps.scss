@@ -61,3 +61,16 @@
 		}
 	}
 }
+
+.mc-field-group-half{
+	width:48%;
+	float: left;
+
+	&--first {
+		margin-right: 4%;
+	}
+}
+
+.form-button {
+	clear: both;
+}

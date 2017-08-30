@@ -2394,7 +2394,7 @@ img {
 
 .signUpBtn {
   position: absolute;
-  bottom: -30%;
+  bottom: -25%;
 }
 
 @media (max-width: 767px) {
@@ -9098,4 +9098,17 @@ img {
   .bookPurchase2a .steps {
     padding: 100px 0 72px;
   }
+}
+
+.mc-field-group-half {
+  width: 48%;
+  float: left;
+}
+
+.mc-field-group-half--first {
+  margin-right: 4%;
+}
+
+.form-button {
+  clear: both;
 }
