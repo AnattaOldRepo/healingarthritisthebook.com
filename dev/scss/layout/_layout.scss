@@ -70,14 +70,18 @@
 
 
 .bg-wood{
-	background: url('#{$img_dir}/cooking-video.jpg') no-repeat center center ;
+	background: url('#{$img_dir}/cycle.jpg') no-repeat bottom center ;
 	position: relative;
 	background-size:cover;
-	max-width:1440px;
 	margin:auto;
 
 	&.bonus-delivery {
-		background: url('#{$img_dir}/bonus-bg.jpg') no-repeat top center;
+		background: url('#{$img_dir}/meditation.jpg') no-repeat top center;
+		background-size:cover;
+	}
+
+	&.contact {
+		background: url('#{$img_dir}/figs-2.jpg') no-repeat top center;
 		background-size:cover;
 	}
 
@@ -322,10 +326,9 @@
 }
 
 .bg-home{
-	background: url('#{$img_dir}/fat-summit-backgorund-image.jpg') no-repeat top center ;
+	background: url('#{$img_dir}/figs.jpg') no-repeat top center ;
 	background-size:cover;
 	position: relative;
-	max-width:1280px;
 	margin:auto;
 }
 .image--col{

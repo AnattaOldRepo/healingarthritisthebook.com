@@ -15,7 +15,7 @@
 	}
 
 	&__bg {
-		background: url('#{$img_dir}/book-perchase-bg.jpg') no-repeat top center ;
+		background: url('#{$img_dir}/cycle.jpg') no-repeat bottom center ;
 		padding-bottom: 0;
     	background-size: cover;
     	@media (min-width:768px){
@@ -538,9 +538,10 @@
 		padding-bottom: 36px;
 	}
 	@include screen(desktop) {
-		background-image: url("#{$img_dir}/testimonial-bg-new.png");
+		background-image: url("#{$img_dir}/figs-2.jpg");
 		background-repeat:no-repeat;
 		background-position: left bottom;
+		background-size:contain;
 
 
 	}

@@ -1903,15 +1903,19 @@ img {
 }
 
 .bg-wood {
-  background: url("../images/cooking-video.jpg") no-repeat center center;
+  background: url("../images/cycle.jpg") no-repeat bottom center;
   position: relative;
   background-size: cover;
-  max-width: 1440px;
   margin: auto;
 }
 
 .bg-wood.bonus-delivery {
-  background: url("../images/bonus-bg.jpg") no-repeat top center;
+  background: url("../images/meditation.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.bg-wood.contact {
+  background: url("../images/figs-2.jpg") no-repeat top center;
   background-size: cover;
 }
 
@@ -2219,10 +2223,9 @@ img {
 }
 
 .bg-home {
-  background: url("../images/fat-summit-backgorund-image.jpg") no-repeat top center;
+  background: url("../images/figs.jpg") no-repeat top center;
   background-size: cover;
   position: relative;
-  max-width: 1280px;
   margin: auto;
 }
 
@@ -3244,7 +3247,7 @@ img {
 }
 
 .book-purchase__bg {
-  background: url("../images/book-perchase-bg.jpg") no-repeat top center;
+  background: url("../images/cycle.jpg") no-repeat bottom center;
   padding-bottom: 0;
   background-size: cover;
 }
@@ -3965,9 +3968,10 @@ img {
 
 @media only screen and (min-width: 1025px) {
   .testimonials {
-    background-image: url("../images/testimonial-bg-new.png");
+    background-image: url("../images/figs-2.jpg");
     background-repeat: no-repeat;
     background-position: left bottom;
+    background-size: contain;
   }
 }
 
