@@ -1848,6 +1848,14 @@ img {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .row.large-padding .col {
+    padding-right: 20px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+  }
+}
+
 .col {
   float: left;
 }

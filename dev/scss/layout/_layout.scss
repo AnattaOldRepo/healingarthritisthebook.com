@@ -33,6 +33,13 @@
 			}
 		}
 	}
+	&.large-padding {
+		.col{
+			@include screen(tablet) {
+				@include padding(null 20px 14px);
+			}
+		}
+	}
 }
 .col{
 	float: left;
