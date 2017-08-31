@@ -8032,11 +8032,12 @@ img {
 
 .accordion--item .affiliate--copy a {
   text-decoration: none;
-  color: #365e85;
+  color: #ff6600;
+  font-weight: 500;
 }
 
 .accordion--item .affiliate--copy a:hover {
-  color: #274461;
+  color: #cc5200;
 }
 
 .accordion--item .affiliate--copy ul {
@@ -8056,7 +8057,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .accordion--item .affiliate--copy .list-dots > li:before {
-    top: 6px;
+    top: 12px;
   }
 }
 

@@ -435,9 +435,10 @@
 			}
 			a{
 				text-decoration: none;
-				color: $blue;
+				color: $orange;
+				font-weight: 500;
 				&:hover{
-					color: darken($blue, 10%);
+					color: darken($orange, 10%);
 				}
 			}
 			ul{
@@ -452,7 +453,7 @@
 						background-color: $gray;
 						top: 8px;
 						@include screen(tablet) {
-							top: 6px;
+							top: 12px;
 						}
 					}
 				}
