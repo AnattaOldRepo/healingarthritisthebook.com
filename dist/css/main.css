@@ -5648,6 +5648,7 @@ img {
 
 .as-seen-on--logos .logos {
   overflow: hidden;
+  padding: 10px 0;
 }
 
 .success-keys {
@@ -9126,4 +9127,8 @@ img {
 
 .form-button {
   clear: both;
+}
+
+.u-hide {
+  display: none;
 }
