@@ -19,7 +19,7 @@
 		padding-bottom: 0;
     	background-size: cover;
     	@media (min-width:768px){
-			height: 654px;
+			height: 915px;
     	}	
 
 	}
@@ -471,6 +471,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
+	text-align:center;
 	&--headshot{
 		@include size(106px);
 		@include border-radius(50%);
@@ -492,10 +493,9 @@
 		text-align: center;
 		width: 100%;
 		padding-top: 10px;
+
 		@include screen(tablet) {
-			padding-left: 26px;
-			text-align: left;
-			width: auto;
+			text-align: center;
 			padding-top: 0;
 		}
 		h4{
@@ -538,18 +538,11 @@
 		padding-bottom: 36px;
 	}
 	@include screen(desktop) {
-		background-image: url("#{$img_dir}/figs-2.jpg");
-		background-repeat:no-repeat;
-		background-position: center center;
-		background-size:cover;
-
-
+		background: url("#{$img_dir}/testimonial.jpg") no-repeat -42px bottom $white;
 	}
 	.container{
 		@include screen(desktop) {
-			padding:50px;
-			background-color:#fff;
-			opacity: 0.95;
+			padding-left: 253px;
 		}
 	}
 	.title{
@@ -626,7 +619,7 @@
 .slick-dots{
 	text-align: center;
 	@include screen(tablet) {
-		@include position(absolute, 42px 15px null null);
+		@include position(absolute, 4px 15px null null);
 	}
 	font-size: 0;
 	li{

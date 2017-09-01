@@ -2231,7 +2231,7 @@ img {
 }
 
 .bg-home {
-  background: url("../images/figs.jpg") no-repeat top center;
+  background: url("../images/optin-bg.jpg") no-repeat top center;
   background-size: cover;
   position: relative;
   margin: auto;
@@ -3262,7 +3262,7 @@ img {
 
 @media (min-width: 768px) {
   .book-purchase__bg {
-    height: 654px;
+    height: 915px;
   }
 }
 
@@ -3873,6 +3873,7 @@ img {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
+  text-align: center;
 }
 
 .author::after {
@@ -3914,9 +3915,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .author--info {
-    padding-left: 26px;
-    text-align: left;
-    width: auto;
+    text-align: center;
     padding-top: 0;
   }
 }
@@ -3976,18 +3975,13 @@ img {
 
 @media only screen and (min-width: 1025px) {
   .testimonials {
-    background-image: url("../images/figs-2.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: url("../images/testimonial.jpg") no-repeat -42px bottom #FFFFFF;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .testimonials .container {
-    padding: 50px;
-    background-color: #fff;
-    opacity: 0.95;
+    padding-left: 253px;
   }
 }
 
@@ -4095,7 +4089,7 @@ img {
 @media only screen and (min-width: 768px) {
   .slick-dots {
     position: absolute;
-    top: 42px;
+    top: 4px;
     right: 15px;
   }
 }
@@ -4736,7 +4730,7 @@ img {
 }
 
 .upsell.upsell-hero {
-  background: url("../images/upsell-hero.jpg") no-repeat center center;
+  background: url("../images/upsell-hero-new.jpg") no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -4746,7 +4740,6 @@ img {
 @media only screen and (min-width: 768px) {
   .upsell.upsell-hero {
     height: 380px;
-    max-width: 1280px;
     margin: auto;
     padding: 0;
   }
@@ -4760,7 +4753,7 @@ img {
 
 @media only screen and (min-width: 1025px) {
   .upsell.upsell-hero {
-    height: 500px;
+    height: 600px;
   }
 }
 
@@ -7555,15 +7548,9 @@ img {
 }
 
 .affiliate--title--sub img {
-  width: 35px;
-  margin-right: 10px;
-}
-
-@media (min-width: 768px) {
-  .affiliate--title--sub img {
-    width: 50px;
-    margin-right: 25px;
-  }
+  width: 30px;
+  margin-right: 18px;
+  margin-top: 10px;
 }
 
 .affiliate--title--sub .icon-articles {
@@ -9129,6 +9116,6 @@ img {
   clear: both;
 }
 
-.u-hide {
+.u-hide, .author--headshot {
   display: none;
 }
