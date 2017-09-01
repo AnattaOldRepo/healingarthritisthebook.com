@@ -2821,6 +2821,10 @@ img {
   margin-top: 20px;
 }
 
+.m-20 a {
+  line-height: 1.6;
+}
+
 @media only screen and (min-width: 768px) {
   .bonus-delivery {
     padding-top: 72px;
