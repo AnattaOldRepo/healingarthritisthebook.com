@@ -2410,8 +2410,9 @@ img {
 
 @media (max-width: 767px) {
   .signUpBtn {
-    bottom: -53%;
+    bottom: -38%;
     width: 94% !important;
+    left: 12px;
   }
 }
 
@@ -4210,7 +4211,7 @@ img {
 
 .order-panel.less-book > .container:before {
   content: '';
-  background: url("../images/sample-best-sellier.png") no-repeat left bottom transparent;
+  background: url("../images/efgt-cooking-book-image.png") no-repeat left bottom transparent;
   height: 132px;
   width: 99px;
   background-size: cover;
@@ -4223,7 +4224,7 @@ img {
 @media only screen and (min-width: 768px) {
   .order-panel.less-book > .container:before {
     height: 234px;
-    width: 175px;
+    width: 160px;
     left: 60px;
     display: block;
     bottom: 0;
@@ -4233,7 +4234,8 @@ img {
 @media only screen and (min-width: 1025px) {
   .order-panel.less-book > .container:before {
     height: 290px;
-    width: 260px;
+    width: 194px;
+    top: 40px;
   }
 }
 
@@ -4259,7 +4261,7 @@ img {
 
 .order-panel.more-book > .container:before {
   content: '';
-  background: url("../images/efgt-book-boundle.png") no-repeat left bottom transparent;
+  background: url("../images/Pre-order-3-or-More-Books.png") no-repeat left bottom transparent;
   height: 68px;
   width: 90px;
   background-size: contain;

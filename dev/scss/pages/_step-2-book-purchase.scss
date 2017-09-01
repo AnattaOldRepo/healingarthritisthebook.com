@@ -706,7 +706,7 @@
 			&:before{
 				content: '';
 				
-				background: url("#{$img_dir}/sample-best-sellier.png") no-repeat left bottom transparent;
+				background: url("#{$img_dir}/efgt-cooking-book-image.png") no-repeat left bottom transparent;
 				@include size(99px 132px);
 				background-size: cover;
 				position: absolute;
@@ -714,13 +714,15 @@
 				left: 15px;
 				display: none;
 				@include screen(tablet) {
-					@include size(175px 234px);
+					@include size(160px 234px);
 					left: 60px;
 					display: block;
 					bottom:0;
 				}
 				@include screen(desktop) {
-					@include size(260px 290px);
+					height: 290px;
+				    width: 194px;
+				    top: 40px;
 				}
 			}
 		}
@@ -738,7 +740,7 @@
 			&:before{
 				content: '';
 				
-				background: url("#{$img_dir}/efgt-book-boundle.png") no-repeat left bottom transparent;
+				background: url("#{$img_dir}/Pre-order-3-or-More-Books.png") no-repeat left bottom transparent;
 				@include size(90px 68px);
 				background-size: contain;
 				position: absolute;
