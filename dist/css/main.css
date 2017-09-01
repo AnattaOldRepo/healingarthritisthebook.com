@@ -4211,7 +4211,7 @@ img {
 
 .order-panel.less-book > .container:before {
   content: '';
-  background: url("../images/efgt-cooking-book-image.png") no-repeat left bottom transparent;
+  background: url("../images/Pre-order-1-Book.png") no-repeat left bottom transparent;
   height: 132px;
   width: 99px;
   background-size: cover;
@@ -4234,8 +4234,8 @@ img {
 @media only screen and (min-width: 1025px) {
   .order-panel.less-book > .container:before {
     height: 290px;
-    width: 194px;
-    top: 40px;
+    width: 233px;
+    top: 33px;
   }
 }
 

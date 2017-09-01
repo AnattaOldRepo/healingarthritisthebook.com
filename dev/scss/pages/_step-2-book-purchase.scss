@@ -706,7 +706,7 @@
 			&:before{
 				content: '';
 				
-				background: url("#{$img_dir}/efgt-cooking-book-image.png") no-repeat left bottom transparent;
+				background: url("#{$img_dir}/Pre-order-1-Book.png") no-repeat left bottom transparent;
 				@include size(99px 132px);
 				background-size: cover;
 				position: absolute;
@@ -721,8 +721,8 @@
 				}
 				@include screen(desktop) {
 					height: 290px;
-				    width: 194px;
-				    top: 40px;
+				    width: 233px;
+				    top: 33px;
 				}
 			}
 		}
