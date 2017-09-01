@@ -2940,7 +2940,6 @@ img {
 
 .gifts__item--image {
   position: relative;
-  overflow: hidden;
   max-width: 260px;
   margin: 0 auto 0;
 }
@@ -3065,9 +3064,8 @@ img {
   background: #ff6600;
   text-align: center;
   border-radius: 50%;
-  top: 57px;
-  left: 0;
-  right: 0;
+  top: -10px;
+  left: -10px;
   margin: auto;
   color: #fff;
   font-size: 16px;
@@ -3079,14 +3077,18 @@ img {
     width: 80px;
     height: 80px;
     font-size: 24px;
+    top: -15px;
+    left: -15px;
   }
 }
 
 @media (min-width: 1024px) {
   .gifts__item--tag {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     font-size: 36px;
+    top: -22px;
+    left: -22px;
   }
 }
 
@@ -3106,7 +3108,7 @@ img {
 
 @media (min-width: 1024px) {
   .gifts__item--tag span {
-    padding-top: 34px;
+    padding-top: 23px;
   }
 }
 
@@ -3244,6 +3246,13 @@ img {
 @media only screen and (min-width: 768px) {
   .book-purchase .container {
     max-width: 1116px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .book-purchase .container {
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -3968,6 +3977,7 @@ img {
   padding-top: 60px;
   padding-bottom: 36px;
   border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
   margin: auto;
 }
 
@@ -3986,7 +3996,8 @@ img {
 
 @media only screen and (min-width: 1025px) {
   .testimonials .container {
-    padding-left: 253px;
+    max-width: 800px;
+    margin: auto;
   }
 }
 
@@ -4018,7 +4029,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .testimonials blockquote p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
   }
 }
@@ -4029,6 +4040,15 @@ img {
 
 .testimonials .slick-dots li.slick-active button {
   background: #db00ff;
+}
+
+@media (min-width: 768px) {
+  .testimonials .slick-dots {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .testimonials__slider {
@@ -4048,8 +4068,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .testimonials__slider-item {
-    height: 370px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
 }
 

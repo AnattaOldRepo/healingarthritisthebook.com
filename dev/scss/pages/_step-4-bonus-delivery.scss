@@ -53,7 +53,6 @@
 		}
 		&--image{
 			position: relative;
-			overflow: hidden;
 			max-width: 260px;
 			margin: 0 auto 0;
 			@include screen(desktop) {
@@ -144,9 +143,8 @@
 		    background: $orange;
 		    text-align: center;
 		    border-radius: 50%;
-		    top: 57px;
-		    left: 0;
-		    right: 0;
+		    top: -10px;
+		    left: -10px;
 		    margin: auto;
 		    color: #fff;
 		    font-size: 16px;
@@ -155,12 +153,16 @@
 		    	width: 80px;
 		    	height: 80px;
 		    	font-size: 24px;
+		    	top: -15px;
+		    	left: -15px;
 		    }
 
 		    @media (min-width:1024px){
-		    	width: 120px;
-		    	height: 120px;
+		    	width: 100px;
+		    	height: 100px;
 		    	font-size: 36px;
+		    	top: -22px;
+		    	left: -22px;
 		    }
 
 		    span {
@@ -174,7 +176,7 @@
 		    	}
 
 		    	@media (min-width:1024px){
-					padding-top:34px;
+					padding-top:23px;
 		    	}
 		    }
 

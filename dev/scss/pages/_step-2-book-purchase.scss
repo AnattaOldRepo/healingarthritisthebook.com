@@ -3,6 +3,10 @@
 	.container{
 		@include screen(tablet) {
 			max-width: 1116px;
+			@include padding(null 35px);
+		}
+
+		@media (min-width:1120px){
 			@include padding(null 15px);
 		}
 	}
@@ -532,6 +536,7 @@
 	padding-top: 60px;
 	padding-bottom: 36px;
 	border-bottom:1px solid #f1f1f1;
+	border-top:1px solid #f1f1f1;
 	margin:auto;
 	@include screen(tablet) {
 		padding-top: 113px;
@@ -542,7 +547,8 @@
 	}
 	.container{
 		@include screen(desktop) {
-			padding-left: 253px;
+			max-width: 800px;
+			margin:auto;
 		}
 	}
 	.title{
@@ -561,7 +567,7 @@
 			font-size: 16px;
 			line-height: 26px;
 			@include screen(tablet) {
-				font-size: 24px;
+				font-size: 20px;
 				line-height: 36px;
 			}
 
@@ -575,6 +581,15 @@
 	.slick-dots li.slick-active button {
 	  background: $purpol;
 	}
+
+	.slick-dots {
+		@media (min-width:768px){
+			top:auto;
+			left: 0;
+			right: 0;
+			bottom:0;
+		}
+	}
 	&__slider{
 		
 		background-color: $white;
@@ -585,8 +600,8 @@
 			height: auto;
 			padding-bottom: 30px;
 			@include screen(tablet) {
-				height: 370px;
-				padding-bottom: 0;
+				
+				padding-bottom: 30px;
 			}
 			&:focus{
 				outline: 0;

@@ -79,6 +79,7 @@ jQuery.noConflict();
 			arrows: false,
 			fade: true,
 			autoplay: true,
+			adaptiveHeight: true,
 			autoplaySpeed: 5000,
 			responsive: [
 			    {
