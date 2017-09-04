@@ -48,7 +48,7 @@
 				content: '';
 				display: block;
 				@include size(177px 181px);
-				background: url("#{$img_dir}/ch-single.png") no-repeat center center;
+				background: url("#{$img_dir}/Book_Simple.png") no-repeat center center;
 				@include position(absolute, null 0 0 null);
 				background-size: contain;
 				display: none;
