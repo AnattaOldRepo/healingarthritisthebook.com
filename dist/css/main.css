@@ -5179,6 +5179,7 @@ img {
 @media only screen and (min-width: 768px) {
   .upsell_chart_main .upsell_chart_box_content figure img {
     max-width: 60%;
+    min-height: 358px;
   }
 }
 
