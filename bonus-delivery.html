@@ -16,11 +16,11 @@
     <![endif]-->
   </head>
   <body>
-    <div class="overlay fixed" id="cookbook_popup" style="display: none;">
+    <div class="overlay fixed js-popup" id="jsgift-one" style="display: none;">
       <div class="cookbook__popup">
         <div class="cookbook__popup__content">
             <a href="#" class="bookbuy__close cookbook__close"><span></span></a>
-            <h4>To use your gift card enter code "SIMPLYFREE" on your BlumHealthMD store purchase of Simply Arthritis Group Coaching Program.</h4>
+            <h4>To use your gift card enter code "Gift-3-code" on your BlumHealthMD store purchase of Simply Arthritis Group Coaching Program.</h4>
             <p>
               <a href="#" class="c-btn cookbook__close">
                 Got It!
@@ -29,6 +29,21 @@
             <p class="note-text">Note this offer is limited to one gift card per 3+ Healing Arthritis purchases and one use per customer.</p>
         </div>
       </div>
+    </div>
+
+    <div class="overlay fixed js-popup" id="js-gift-two" style="display: none;">
+        <div class="cookbook__popup">
+            <div class="cookbook__popup__content">
+                <a href="#" class="bookbuy__close cookbook__close"><span></span></a>
+                <h4>To use your gift card enter code "HEALINGARTHRITIS" on your BlumHealthMD store purchase of Simply Arthritis Group Coaching Program.</h4>
+                <p>
+                  <a href="#" class="c-btn cookbook__close">
+                    Got It!
+                  </a>
+                </p>
+                <p class="note-text">Note this offer is limited to one gift card per 3+ Healing Arthritis purchases and one use per customer.</p>
+            </div>
+        </div>
     </div>
     <div class="overlay" id="bookbuypopup">
         <div class="bookbuy__popup">
@@ -95,33 +110,52 @@
           You’re one step closer in your journey to reverse your arthritis and live pain free.<br/> Thank you for purchasing Healing Arthritis. Here are your gifts:
         </h3>
         <section class="gifts">
-          <div class="row has--padding large-padding col--two flex">
-            <div class="col flex--item"><a href="https://www.dropbox.com/s/9yu05q4oarixsve/Expert%20Advice%20eBook%20-%20Blum.pdf?dl=0" class="gifts__item is-clickable">
-                <div class="gifts__item--copy">
-                  <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #1</span>Expert Advice E-Book</h4>
+            <div class="row has--padding large-padding col--two flex">
+                <div class="col flex--item">
+                    <a href="https://www.dropbox.com/s/9yu05q4oarixsve/Expert%20Advice%20eBook%20-%20Blum.pdf?dl=0" class="gifts__item is-clickable">
+                        <div class="gifts__item--copy">
+                            <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #1</span>Expert Advice E-Book</h4>
+                        </div>
+                        
+                        <div class="gifts__item--image">
+                            <img src="dist/images/expert-advice.jpg" alt="Cooking Videos with Dr. Mark Hyman">
+                        </div>
+                    </a>
                 </div>
-                <div class="gifts__item--image"><img src="dist/images/expert-advice.jpg" alt="Cooking Videos with Dr. Mark Hyman"></div></a></div>
-            <div class="col flex--item"><a href="https://www.dropbox.com/s/8kqgbz7hd0zqejc/Healthy%20Living%20eCourse%20-%20Blum.pdf?dl=0" target="_blank" class="gifts__item is-clickable">
-                <div class="gifts__item--copy">
-                  <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #2</span>The Blum Center Healthy Living E-Course</h4>
+            
+                <div class="col flex--item">
+                    <a href="https://www.dropbox.com/s/8kqgbz7hd0zqejc/Healthy%20Living%20eCourse%20-%20Blum.pdf?dl=0" target="_blank" class="gifts__item is-clickable">
+                    
+                        <div class="gifts__item--copy">
+                            <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #2</span>The Blum Center Healthy Living E-Course</h4>
+                        </div>
+                        <div class="gifts__item--image">
+                            <img src="dist/images/healthy-living.jpg" alt="Free Bottle of Avocado Oil">
+                        </div>
+                    </a>
                 </div>
-                <div class="gifts__item--image"><img src="dist/images/healthy-living.jpg" alt="Free Bottle of Avocado Oil"></div></a></div>
-            <div class="col flex--item">
-              <a href="#" class="gifts__item is-clickable cookbook_popup_open">
-                <div class="gifts__item--copy">
-                  <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #3</span>Free Group Coaching</h4>
+
+                <div class="col flex--item">
+                    <a href="#" class="gifts__item is-clickable js-gift-one">
+                        <div class="gifts__item--copy">
+                            <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #3</span>Free Group Coaching</h4>
+                        </div>
+                        
+                        <div class="gifts__item--image"><img src="dist/images/arthritis-course.jpg" alt="Meal Planner and Recipe Guide"></div>
+                    </a>
                 </div>
-                <div class="gifts__item--image"><img src="dist/images/arthritis-course.jpg" alt="Meal Planner and Recipe Guide"></div>
-              </a>
-            </div>
-            <div class="col flex--item">
-              <a href="#" class="gifts__item is-clickable">
-                <div class="gifts__item--copy">
-                  <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #4</span>15% off your next Blum Health MD Purchase</h4>
+                
+                <div class="col flex--item">
+                    <a href="#" class="gifts__item is-clickable js-gift-two">
+                        <div class="gifts__item--copy">
+                            <h4 class="gifts__item--name"><span class="gifts__item--count block">Gift #4</span>15% off your next Blum Health MD Purchase</h4>
+                        </div>
+                        
+                        <div class="gifts__item--image">
+                            <img src="dist/images/15-off.jpg" alt="Meal Planner and Recipe Guide">
+                        </div>
+                    </a>
                 </div>
-                <div class="gifts__item--image"><img src="dist/images/15-off.jpg" alt="Meal Planner and Recipe Guide"></div>
-              </a>
-            </div>
           </div>
         </section>
       </div>

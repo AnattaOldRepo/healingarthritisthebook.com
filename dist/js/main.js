@@ -260,12 +260,27 @@ jQuery.noConflict();
 	});	
 
 	$('.cookbook__close').click(function() {
-		$('#cookbook_popup').fadeOut();
+		$('.js-popup').fadeOut();
 		$('body').removeClass('overflowhidden');
 		return false;
 	});	
-	$('.cookbook_popup_open').click(function() {
-		$('#cookbook_popup').fadeIn();
+	$('.js-gift-one').click(function() {
+		$('#jsgift-one').fadeIn();
+		$('body').addClass('overflowhidden');
+		return false;
+	});	
+	$('.js-gift-two').click(function() {
+		$('#js-gift-two').fadeIn();
+		$('body').addClass('overflowhidden');
+		return false;
+	});	
+	$('.js-gift-three').click(function() {
+		$('#js-gift-three').fadeIn();
+		$('body').addClass('overflowhidden');
+		return false;
+	});	
+	$('.js-gift-four').click(function() {
+		$('#js-gift-four').fadeIn();
 		$('body').addClass('overflowhidden');
 		return false;
 	});	
