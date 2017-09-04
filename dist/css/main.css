@@ -5172,6 +5172,12 @@ img {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .upsell_chart_main .upsell_chart_box_content figure {
+    min-height: 358px;
+  }
+}
+
 .upsell_chart_main .upsell_chart_box_content figure img {
   max-width: 80%;
 }
@@ -5179,7 +5185,6 @@ img {
 @media only screen and (min-width: 768px) {
   .upsell_chart_main .upsell_chart_box_content figure img {
     max-width: 60%;
-    min-height: 358px;
   }
 }
 

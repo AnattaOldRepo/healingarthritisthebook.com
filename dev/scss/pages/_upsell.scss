@@ -402,11 +402,13 @@
 		figure{
 			margin:0 0 20px 0;
 			text-align:center;
+			@include screen(tablet) {
+				min-height: 358px;
+			}
 			img{
 				max-width:80%;
 				@include screen(tablet) {
 					max-width:60%;
-					min-height: 358px;
 				}
 			}
 		}
