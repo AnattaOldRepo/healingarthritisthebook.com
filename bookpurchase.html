@@ -167,7 +167,7 @@
                        <div style="text-align:center;">Thanks for signing up!</div>
                    </span>
 
-                   <form data-id="embedded_signup:form" class="ctct-custom-form Form form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
+                   <form  id="actionForm" data-id="embedded_signup:form" class="ctct-custom-form Form form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
                        <p></p>
                        <!-- The following code must be included to ensure your sign-up form works properly. -->
                        <input data-id="ca:input" type="hidden" name="ca" value="b65690f9-2781-4d12-aac7-4863570a46fc">
@@ -220,6 +220,7 @@
                      localizedErrMap['selectcountry'] = 'Select a country';
                      var postURL = 'https://visitor2.constantcontact.com/api/signup';
                   </script>
+
                   <script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
 
                   </div>
@@ -386,8 +387,7 @@
           <div class="gifts__item--copy">
             <h3 class="gifts__item--title text-orange">Healing Arthritis</h3>
             <h4 class="gifts__item--name">15% off your next Blum Health MD Purchase</h4>
-             <p>We know that treating arthritis is an investment.  As a final gift we want to applaud and support your efforts with a discount from our online store.  Order your  copy now we’ll send you a coupon for 15% off your next order from Blum Health MD. Use it on anything -- heal your gut and send your arthritis packing!</p>
-             <p>Coupon Code <em>HealingArthritis</em></p>
+             <p>We know that treating arthritis is an investment. As a final gift, we want to applaud and support your efforts with a discount from our online store. Order your copy now we’ll send you a coupon for 15% off <strong>any one item</strong> on your next order from Blum Health MD. Use it on anything -- heal your gut and send your arthritis packing!</p>
           </div>
         </article>
       </div>
@@ -520,6 +520,23 @@
       </div>
     </div>
     <script src="dist/js/main.min.js"></script>
+    <script type="text/javascript">
+      
+      var eventposted=0;
+ 
+       jQuery(document).ready(function(){
+         jQuery('.signUpBtn').click(function() {
+           window.setInterval(foo, 2000);
+         });
+       });
+       
+       function foo(){
+         if((jQuery("#success_message").is(':visible')) && (eventposted==0)){
+           window.location = "/upsell.html";
+           eventposted=1;
+         }
+       }
+    </script>
     <!-- Facebook Pixel Code -->
       <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
