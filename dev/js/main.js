@@ -16,11 +16,11 @@ jQuery.noConflict();
 			dots: true,
 			infinite: false,
 			speed: 300,
-			arrows: false,
+			arrows: true,
 			fade: true,
-			autoplay: true,
-			adaptiveHeight: true,
-			autoplaySpeed: 5000,
+			autoplay: false,
+			adaptiveHeight: false,
+			infinite: true,
 			responsive: [
 			    {
 			      breakpoint: 767,

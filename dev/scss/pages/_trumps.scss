@@ -78,3 +78,12 @@
 .u-hide, .author--headshot {
 	display: none;
 }
+
+.testimonials__slider-item {
+	padding-left:20px;
+	padding-right:20px;
+	@media (min-width:768px){
+		padding-left:15px;
+		padding-right:15px;
+	}
+}
