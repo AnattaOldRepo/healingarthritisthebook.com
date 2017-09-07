@@ -4823,13 +4823,13 @@ img {
 
 @media only screen and (min-width: 1023px) {
   .upsell.upsell-hero {
-    height: 450px;
+    height: 500px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .upsell.upsell-hero {
-    height: 600px;
+    height: 675px;
   }
 }
 
@@ -4867,7 +4867,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .upsell.upsell-hero .upsell-challenge-content .hero--copy {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }
 
@@ -5259,7 +5259,7 @@ img {
 }
 
 .upsell_chart_main .upsell_chart_heading.headingtop {
-  border-top: 15px solid #ebeff3;
+  border-top: 15px solid #db00ff;
   border-radius: 2px;
 }
 
@@ -5311,7 +5311,7 @@ img {
 }
 
 .upsell_chart_main .upsell_chart_content {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #888889;
   padding: 10px 0;
 }
 
@@ -6038,12 +6038,14 @@ img {
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 13px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {
   .result h2 {
-    font-size: 42px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
@@ -6110,7 +6112,6 @@ img {
 }
 
 .result-copy {
-  font-family: "Work Sans", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -6121,32 +6122,29 @@ img {
 }
 
 .result-copy h5 {
-  font-family: "avenir-bold", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
   position: relative;
   letter-spacing: 0.05em;
+  /*
+		    &:after {
+		    	@include size(30px 1px);
+		    	@include margin(5px auto);
+			    display: block;
+			    content: '';
+			    background-color: $border-color;
+			    @include screen(tablet) {
+			    	@include margin(10px auto);
+			    }
+			}
+			*/
 }
 
 @media only screen and (min-width: 768px) {
   .result-copy h5 {
-    font-size: 15px;
-    min-height: 50px;
-  }
-}
-
-.result-copy h5:after {
-  height: 1px;
-  width: 30px;
-  margin: 5px auto;
-  display: block;
-  content: '';
-  background-color: #e1e1e1;
-}
-
-@media only screen and (min-width: 768px) {
-  .result-copy h5:after {
-    margin: 10px auto;
+    font-size: 24px;
+    min-height: 70px;
   }
 }
 
@@ -6173,7 +6171,7 @@ img {
 @media only screen and (min-width: 768px) {
   .result p {
     margin-bottom: 15px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18px;
   }
 }
@@ -9139,7 +9137,7 @@ img {
 
 @media (min-width: 1025px) {
   .bookUpsell .upsell.upsell-hero .upsell-challenge-content .hero--copy {
-    margin-top: 140px;
+    margin-top: 50px;
   }
 }
 
@@ -9211,5 +9209,37 @@ img {
   .testimonials__slider-item {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+.upsell-preptext .container {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .upsell-preptext__left {
+    max-width: 70%;
+    float: left;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .upsell-preptext__left p {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
+
+.upsell-preptext__right {
+  max-width: 50%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .upsell-preptext__right {
+    max-width: 20%;
+    float: right;
   }
 }

@@ -19,7 +19,7 @@
 
 	.upsell.upsell-hero .upsell-challenge-content .hero--copy {
 		@media (min-width:1025px){
-			margin-top: 140px;
+			margin-top: 50px;
 		}
 	}
 
@@ -85,5 +85,35 @@
 	@media (min-width:768px){
 		padding-left:15px;
 		padding-right:15px;
+	}
+}
+
+.upsell-preptext .container {
+	overflow:hidden;
+}
+
+.upsell-preptext__left {
+
+	@media (min-width:768px) {
+		max-width: 70%;
+		float: left;
+		text-align: left;
+		line-height: 1.5;
+	}
+
+	p {
+		@media (min-width:768px) {
+			margin-top: 30px;
+			font-size: 20px;
+		}
+	}
+}
+
+.upsell-preptext__right {
+	max-width:50%;
+	margin:auto;
+	@media (min-width:768px) {
+		max-width:20%;
+		float: right;
 	}
 }

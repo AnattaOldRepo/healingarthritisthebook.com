@@ -108,10 +108,10 @@
 			padding:0;
 		}
 		@include screen(tablet-l) {
-			height:450px;
+			height:500px;
 		}
 		@include screen(desktop) {
-				height:600px;
+				height:675px;
 		}
 		.container{
 			height:auto;
@@ -142,7 +142,7 @@
 				transform: translateY(0);
 				@include screen(tablet) {
 					
-					margin-top:60px;
+					margin-top:30px;
 				}
 				@include screen(desktop) {
 					margin-top:90px;
@@ -426,7 +426,7 @@
 			}
 		}
 		&.headingtop{
-			border-top:15px solid #ebeff3;
+			border-top:15px solid #db00ff;
 			@include border-radius(2px);
 			@include screen(tablet) {
 				border-width:22px;
@@ -469,7 +469,7 @@
 		}
 	}
 	.upsell_chart_content{
-		border-bottom:1px solid #f1f1f1;
+		border-bottom:1px solid #888889;
 		padding:10px 0;
 		@include screen(desktop) {
 			min-height:960px;
@@ -991,9 +991,11 @@
     	line-height: 26px;
 		font-weight: 400;
 		margin-bottom: 13px;
+		font-family: "Work Sans", sans-serif;
+		font-weight: 300;
 		@include screen(tablet) {
-			font-size: 42px;
-			line-height: 56px;
+			font-size: 40px;
+			line-height: 48px;
 		}
 	}
 	h4{
@@ -1040,21 +1042,22 @@
 		}
 	}
 	&-copy{
-		font-family: $font-family-demi;
+	
 		margin-bottom: 20px;
 		@include screen(tablet) {
 			margin-bottom: 0;
 		}
 		h5 {
-			font-family: $font-family-bold;
+			font-weight:400;
 		    text-transform: uppercase;
 		    font-size: 13px;
 		    position: relative;
 		    letter-spacing: 0.05em;
 		    @include screen(tablet) {
-		    	font-size: 15px;
-		    	min-height: 50px;
+		    	font-size: 24px;
+		    	min-height: 70px;
 		    }
+		    /*
 		    &:after {
 		    	@include size(30px 1px);
 		    	@include margin(5px auto);
@@ -1065,6 +1068,7 @@
 			    	@include margin(10px auto);
 			    }
 			}
+			*/
 		}
 		.large {
 		    
@@ -1084,7 +1088,7 @@
 	    margin-bottom: 10px;
 		@include screen(tablet) {
 			margin-bottom: 15px;
-			font-size: 15px;
+			font-size: 17px;
 			line-height: 18px;
 		}
 	}
