@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8">
      <title>Healing Arthritis By Dr. Susan Blum</title>
-    <meta itemprop="description" content="Heal the gut, heal the joints! Dr. Blum shares her 3-step guide to conquering arthritis naturally.">
+    <meta itemprop="description" name="description" content="Heal the gut, heal the joints! Dr. Blum shares her 3-step guide to conquering arthritis naturally." />
+    <meta itemprop="image" name="og:image" content="https://blumhealthmd.com/wp-content/themes/storefront-child-theme-master/assets/images/Book_Simple.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@susanblummd" />
+    <meta name="twitter:title" content="Healing Arthritis By Dr. Susan Blum" />
+    <meta name="twitter:description" content="Heal the gut, heal the joints! Dr. Blum shares her 3-step guide to conquering arthritis naturally." />
+    <meta name="twitter:image" content="https://blumhealthmd.com/wp-content/themes/storefront-child-theme-master/assets/images/Book_Simple.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- CSS & Fonts-->
     <link rel="stylesheet" href="dist/css/main.css">
-    <meta property="og:image" content="susanblum.jpg" />
-    <meta itemprop="image" content="https://blumhealthmd.com/wp-content/themes/storefront-child-theme-master/assets/images/Book_Simple.png">
     <!-- Favicons & iPhone icons-->
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -248,7 +254,7 @@
     <section class="testimonials">
     <div class="container">
         <h2 class="title">What People Are Saying…</h2>
-        
+
         <div class="testimonials__slider">
             <div class="item testimonials__slider-item">
                 <div class="author">
@@ -267,7 +273,7 @@
                     </blockquote>
                 </div>
             </div>
-       
+
             <div class="item testimonials__slider-item">
                 <div class="author">
                     <div class="author--headshot"><img src="../images/headshot_toby.jpg" alt="Toby Cosgrove, MD"></div>
@@ -277,13 +283,13 @@
                 </div>
                 <div class="author__testimonials">
                   <blockquote>
-                    <p>“When I began working with Dr. Blum I was struggling with Rheumatoid Arthritis and Raynaud’s Disease. 
+                    <p>“When I began working with Dr. Blum I was struggling with Rheumatoid Arthritis and Raynaud’s Disease.
                       As soon as I began Dr Blum’s protocol I immediately felt more energy and my brain fog started to dissipate. I have no more rheumatoid factor and I do not suffer from Raynaud’s Disease. I am so grateful to Dr. Blum. She has not just given me the gift of health but also helped me look and feel better than I ever felt before. I live life to the fullest now and have a very positive outlook!"
                       </p>
                   </blockquote>
                 </div>:
             </div>
-   
+
             <div class="item testimonials__slider-item">
             <div class="author">
               <div class="author--headshot"><img src="dist/images/headshot_christiane.jpg" alt="Christiane Northrup, MD"></div>
@@ -611,15 +617,15 @@
     </div>
     <script src="dist/js/main.min.js"></script>
     <script type="text/javascript">
-      
+
       var eventposted=0;
- 
+
        jQuery(document).ready(function(){
          jQuery('.signUpBtn').click(function() {
            window.setInterval(foo, 2000);
          });
        });
-       
+
        function foo(){
          if((jQuery("#success_message").is(':visible')) && (eventposted==0)){
            window.location = "/upsell.html";
