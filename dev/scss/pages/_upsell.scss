@@ -94,6 +94,25 @@
 				}
 			}
 		}
+		.upsell__content {
+			margin-bottom: 20px;
+			@include screen(tablet) {
+				max-width: 660px;
+			}
+		}
+		.upsell__about {
+			text-align: center;
+			color: #000000;
+		}
+	}
+
+	&.about-book {
+		border-bottom:1px solid #f1f1f1;
+
+		@include screen(tablet) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
 	}
 
 	&.upsell-hero{
@@ -111,7 +130,7 @@
 			height:500px;
 		}
 		@include screen(desktop) {
-				height:675px;
+				height:760px;
 		}
 		.container{
 			height:auto;
@@ -1055,7 +1074,7 @@
 		    letter-spacing: 0.05em;
 		    @include screen(tablet) {
 		    	font-size: 24px;
-		    	min-height: 70px;
+		    	min-height: 90px;
 		    }
 		    /*
 		    &:after {
@@ -1478,5 +1497,38 @@
 	}
 	&__amazon {
 		max-width: 180px;
+	}
+}
+
+.c-about {
+	overflow:hidden;
+	text-align:center;
+	padding:20px 0 0 0;
+	border-top: 1px solid #f1f1f1;
+	
+	@media (min-width:768px){
+		padding:40px 0 0 0;
+	}
+
+	&__heading{
+		padding:15px 0;
+
+		@media (min-width:768px){
+			padding:30px 0;
+		}
+	}
+	&__left {
+		img {
+			max-width: 250px;
+			border-radius:100%;
+		}
+	}
+
+	&__right {
+		margin-top: 30px;
+	}
+
+	p {
+		padding-bottom:20px;
 	}
 }

@@ -385,6 +385,7 @@ body{
 }
 
 .c-headerBook {
+	min-height:124px;
 	.c-headerC {
 		@include screen(tablet){
 			text-align: left;
@@ -392,6 +393,7 @@ body{
 		}
 	}
 	.c-headerMain {
+		align-items: center;
 		@include screen(mobile-m){
 			padding-top:45px;
 		}
