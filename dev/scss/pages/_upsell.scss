@@ -1505,7 +1505,7 @@
 	text-align:center;
 	padding:20px 0 0 0;
 	border-top: 1px solid #f1f1f1;
-	
+
 	@media (min-width:768px){
 		padding:40px 0 0 0;
 	}
@@ -1528,7 +1528,17 @@
 		margin-top: 30px;
 	}
 
+	&__upsell {
+		border-top:0;
+		border-bottom: 1px solid #f1f1f1;
+	}
+
 	p {
 		padding-bottom:20px;
 	}
+}
+
+.video__content {
+	padding-left:10px;
+	padding-right:10px;
 }

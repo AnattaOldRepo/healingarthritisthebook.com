@@ -29,6 +29,20 @@
     <script src="https://use.fontawesome.com/4d6bc178b0.js"></script>
   </head>
   <body class="bookUpsell">
+    <div class="overlay" id="bookbuypopup">
+        <div class="bookbuy__popup">
+            <div class="bookbuy__content">
+                <a href="#" class="bookbuy__close"><span></span></a>
+                <h4>Pick an online store to purchase the book from:</h4>
+                <div class="bookbuy__books__content">
+                    <a href="http://amzn.to/2fwzuj5" target="_blank"><img src="dist/images/logo_amazon.png" alt="amazon store"></a>
+                    <span>OR</span>
+                    <a href="https://www.barnesandnoble.com/w/healing-arthritis-dr-susan-blum-md/1126314221?ean=9781501156465" target="_blank"><img src="dist/images/logo_b-and-n.png" alt="Barnes &amp; Noble Booksellers"></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="c-header header c-headerBook">
         <div class="container">
             <div class="c-headerMain">
@@ -49,7 +63,7 @@
                     </h1>
                 </div>
                 <div class="c-headerR">
-                    <a href="/" class="c-btn">BUY BOOK</a>
+                    <a href="/" class="c-btn buybtn">BUY BOOK</a>
                 </div>
             </div>
         </div>
@@ -150,7 +164,7 @@
         <div class="row col-four">
           <div class="col">
             <div class="result-copy">
-              <h5>ELIMINATE PAIN</h5>
+              <h5>ELIMINATE<br/> PAIN</h5>
                <p>Discover and treat what causes you pain.</p>
             </div>
           </div>
@@ -263,7 +277,7 @@
             <div class="author">
               <div class="author--headshot"><img src="dist/images/headshot_christiane.jpg" alt="Christiane Northrup, MD"></div>
               <div class="author--info">
-                <h4>Amy Myers M.D</h4><small>New York Times bestselling author of The Autoimmune Solution and The Thyroid Connection</small>
+                <h4>Amy Myers M.D</h4><small>New York Times bestselling author of The Autoimmune Solution and The Thyroid Connection.</small>
               </div>
             </div>
             <div class="author__testimonials">
@@ -278,7 +292,7 @@
             <div class="author">
               <div class="author--headshot"><img src="dist/images/headshot_christiane.jpg" alt="Christiane Northrup, MD"></div>
               <div class="author--info">
-                <h4>Dr. Mark Hyman</h4><small>Medical Director at Cleveland Clinic's Center for Functional Medicine, the Founder of The UltraWellness Center, and a ten-time #1 New York Times Best Selling author</small>
+                <h4>Dr. Mark Hyman</h4><small>Medical Director at Cleveland Clinic's Center for Functional Medicine, the Founder of The UltraWellness Center, and a ten-time #1 New York Times Best Selling author.</small>
               </div>
             </div>
             <div class="author__testimonials">
@@ -712,19 +726,7 @@
                   </div>
               </div>
           </div>
-          <div class="upsell-preptext">
-            <div class="container">
-              <div class="upsell-preptext__left">
-                Already have your copy of Healing Arthritis? You're ready to get started. If not, act now to <a href="/bookpurchase.html" style="color: #1b6ac9;">purchase</a> your copy.
-
-                <p>Heal your arthritis, change your life. Join us today!</p>
-                </div>
-                <div class="upsell-preptext__right">
-                  <img src="/dist/images/Book_Simple.png">
-                </div>
-            </div>
-          </div>
-          <div class="c-about">
+          <div class="c-about c-about__upsell" >
             <div class="container">
               <h2 class="c-about__heading title">About Dr. Blum</h2>
               <div class="c-about__left">
@@ -741,6 +743,18 @@
                   Here’s the great news: No matter what type of arthritis you have, you can heal your joints by finding and treating inflammation at its source. I have helped thousands of people do this, I have healed myself, and I know I can help you, too.
                 </p>
               </div>
+            </div>
+          </div>
+          <div class="upsell-preptext">
+            <div class="container">
+              <div class="upsell-preptext__left">
+                Already have your copy of Healing Arthritis? You're ready to get started. If not, act now to <a href="/bookpurchase.html" style="color: #1b6ac9;">purchase</a> your copy.
+
+                <p>Heal your arthritis, change your life. Join us today!</p>
+                </div>
+                <div class="upsell-preptext__right">
+                  <img src="/dist/images/Book_Simple.png">
+                </div>
             </div>
           </div>
       </div>

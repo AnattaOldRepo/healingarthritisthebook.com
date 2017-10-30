@@ -6771,8 +6771,18 @@ img {
   margin-top: 30px;
 }
 
+.c-about__upsell {
+  border-top: 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
 .c-about p {
   padding-bottom: 20px;
+}
+
+.video__content {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .downsell {
