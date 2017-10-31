@@ -47,8 +47,11 @@
 				padding-top: 45px;
 			}
 			.col{
+				float: none;
+				margin: auto;
 				@include screen(tablet-max) {
 					width: 50%;
+
 				}
 			}
 
@@ -996,4 +999,22 @@
 	&.nysmalltitle{
 		font-size:20px;
 	}
+}
+
+.title__sub{
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 13px;
+  font-weight: 400;
+  margin-top: -15px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .title__sub {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 32px;
+    margin-top: -22px;
+  }
 }	

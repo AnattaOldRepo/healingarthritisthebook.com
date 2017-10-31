@@ -3373,6 +3373,11 @@ img {
   }
 }
 
+.book-purchase__video-section .col {
+  float: none;
+  margin: auto;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .book-purchase__video-section .col {
     width: 50%;
@@ -4676,6 +4681,24 @@ img {
 
 .amazon-bestseller.nysmalltitle {
   font-size: 20px;
+}
+
+.title__sub {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 13px;
+  font-weight: 400;
+  margin-top: -15px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .title__sub {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 32px;
+    margin-top: -22px;
+  }
 }
 
 .upsell.testimonials {
