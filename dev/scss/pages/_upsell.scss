@@ -94,6 +94,25 @@
 				}
 			}
 		}
+		.upsell__content {
+			margin-bottom: 20px;
+			@include screen(tablet) {
+				max-width: 660px;
+			}
+		}
+		.upsell__about {
+			text-align: center;
+			color: #000000;
+		}
+	}
+
+	&.about-book {
+		border-bottom:1px solid #f1f1f1;
+
+		@include screen(tablet) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
 	}
 
 	&.upsell-hero{
@@ -111,7 +130,7 @@
 			height:500px;
 		}
 		@include screen(desktop) {
-				height:675px;
+				height:760px;
 		}
 		.container{
 			height:auto;
@@ -331,13 +350,14 @@
 .upsell_block{
 	padding-top: 50px;
 	padding-bottom: 30px;
+	border-bottom: 1px solid #f1f1f1;
 	@include screen(tablet) {
 		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-bottom: 50px;
 	}
 	@include screen(desktop) {
 		padding-top: 104px;
-		padding-bottom: 102px;
+		padding-bottom: 60px;
 	}
 	h2{
 		font-size: 22px;
@@ -1055,7 +1075,7 @@
 		    letter-spacing: 0.05em;
 		    @include screen(tablet) {
 		    	font-size: 24px;
-		    	min-height: 70px;
+		    	min-height: 90px;
 		    }
 		    /*
 		    &:after {
@@ -1480,3 +1500,95 @@
 		max-width: 180px;
 	}
 }
+
+.c-about {
+	overflow:hidden;
+	text-align:center;
+	padding:20px;
+	border-top: 1px solid #f1f1f1;
+
+	@media (min-width:768px){
+		padding:40px 0;
+	}
+
+	&__heading{
+		padding:15px 0;
+
+		@media (min-width:768px){
+			padding:30px 0;
+		}
+	}
+	&__left {
+		img {
+			max-width: 250px;
+			border-radius:100%;
+		}
+	}
+
+	&__right {
+		margin-top: 30px;
+	}
+
+	&__upsell {
+		border-top:0;
+		border-bottom: 1px solid #f1f1f1;
+	}
+
+	p {
+		padding-bottom:20px;
+	}
+}
+
+.video__content {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.c-testimonial{
+	padding-top:20px;
+	padding-bottom:20px;
+	border-bottom:5px solid #d902fe;
+	@include screen(tablet){
+		padding-top:60px;
+		padding-bottom:60px;
+		border-bottom:15px solid #d902fe;
+	}
+}
+
+    .c-testimonial__author{
+        color: #d902fe;
+        font-size: 16px;
+        padding:30px 0 15px 0;
+        @include screen(tablet){
+			font-size: 18px;
+        }
+    }
+
+    .c-testimonial__content {
+    	font-size: 18px;
+    	line-height: 36px;
+    	max-width: 800px;
+	    margin: auto;
+	    @include screen(tablet){
+			font-size: 20px;
+	    }
+    }
+
+    .c-testimonial__bio{
+        max-width: 465px;
+        margin:auto;
+        font-size: 14px;
+        line-height: 1.5;
+        @include screen(tablet){
+        	font-size: 16px;
+        }
+    }
+
+    .c-testimonial__img{
+        max-width: 175px;
+        margin:auto;
+        img{
+            border-radius: 100%;
+        }
+    }
+

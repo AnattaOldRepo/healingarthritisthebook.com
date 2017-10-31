@@ -128,6 +128,7 @@
 
 .steps{
 	padding: 35px 0 32px;
+	border-bottom: 1px solid #f1f1f1;
 	@include screen(tablet) {
 		padding: 77px 0 72px;
 	}

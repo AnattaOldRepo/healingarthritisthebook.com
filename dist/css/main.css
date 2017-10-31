@@ -1558,11 +1558,20 @@ img {
   }
 }
 
+.c-headerBook {
+  min-height: 124px;
+}
+
 @media only screen and (min-width: 768px) {
   .c-headerBook .c-headerC {
     text-align: left;
     padding-left: 260px;
   }
+}
+
+.c-headerBook .c-headerMain {
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3462,6 +3471,7 @@ img {
 
 .steps {
   padding: 35px 0 32px;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4805,6 +4815,32 @@ img {
   }
 }
 
+.upsell.plan .upsell__content {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .upsell.plan .upsell__content {
+    max-width: 660px;
+  }
+}
+
+.upsell.plan .upsell__about {
+  text-align: center;
+  color: #000000;
+}
+
+.upsell.about-book {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+@media only screen and (min-width: 768px) {
+  .upsell.about-book {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .upsell.upsell-hero {
   background: url("../images/upsell-hero-new.jpg") no-repeat center center;
   background-size: cover;
@@ -4829,7 +4865,7 @@ img {
 
 @media only screen and (min-width: 1025px) {
   .upsell.upsell-hero {
-    height: 675px;
+    height: 760px;
   }
 }
 
@@ -5122,19 +5158,20 @@ img {
 .upsell_block {
   padding-top: 50px;
   padding-bottom: 30px;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 @media only screen and (min-width: 768px) {
   .upsell_block {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .upsell_block {
     padding-top: 104px;
-    padding-bottom: 102px;
+    padding-bottom: 60px;
   }
 }
 
@@ -6144,7 +6181,7 @@ img {
 @media only screen and (min-width: 768px) {
   .result-copy h5 {
     font-size: 24px;
-    min-height: 70px;
+    min-height: 90px;
   }
 }
 
@@ -6702,6 +6739,113 @@ img {
 
 .c-bestSeller__amazon {
   max-width: 180px;
+}
+
+.c-about {
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .c-about {
+    padding: 40px 0;
+  }
+}
+
+.c-about__heading {
+  padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+  .c-about__heading {
+    padding: 30px 0;
+  }
+}
+
+.c-about__left img {
+  max-width: 250px;
+  border-radius: 100%;
+}
+
+.c-about__right {
+  margin-top: 30px;
+}
+
+.c-about__upsell {
+  border-top: 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.c-about p {
+  padding-bottom: 20px;
+}
+
+.video__content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c-testimonial {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #d902fe;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-testimonial {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 15px solid #d902fe;
+  }
+}
+
+.c-testimonial__author {
+  color: #d902fe;
+  font-size: 16px;
+  padding: 30px 0 15px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-testimonial__author {
+    font-size: 18px;
+  }
+}
+
+.c-testimonial__content {
+  font-size: 18px;
+  line-height: 36px;
+  max-width: 800px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-testimonial__content {
+    font-size: 20px;
+  }
+}
+
+.c-testimonial__bio {
+  max-width: 465px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .c-testimonial__bio {
+    font-size: 16px;
+  }
+}
+
+.c-testimonial__img {
+  max-width: 175px;
+  margin: auto;
+}
+
+.c-testimonial__img img {
+  border-radius: 100%;
 }
 
 .downsell {
