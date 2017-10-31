@@ -29,7 +29,21 @@
     <script src="https://use.fontawesome.com/4d6bc178b0.js"></script>
   </head>
   <body class="bookUpsell">
-    <header class="c-header header c-headerBook u-hide">
+    <div class="overlay" id="bookbuypopup">
+        <div class="bookbuy__popup">
+            <div class="bookbuy__content">
+                <a href="#" class="bookbuy__close"><span></span></a>
+                <h4>Pick an online store to purchase the book from:</h4>
+                <div class="bookbuy__books__content">
+                    <a href="http://amzn.to/2fwzuj5" target="_blank"><img src="dist/images/logo_amazon.png" alt="amazon store"></a>
+                    <span>OR</span>
+                    <a href="https://www.barnesandnoble.com/w/healing-arthritis-dr-susan-blum-md/1126314221?ean=9781501156465" target="_blank"><img src="dist/images/logo_b-and-n.png" alt="Barnes &amp; Noble Booksellers"></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="c-header header c-headerBook">
         <div class="container">
             <div class="c-headerMain">
                 <div class="c-headerL c-headerBookL">
@@ -49,13 +63,13 @@
                     </h1>
                 </div>
                 <div class="c-headerR">
-                    <a href="/" class="c-btn">BUY BOOK</a>
+                    <a href="/" class="c-btn buybtn">BUY BOOK</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <header class="c-header header">
+    <header class="c-header header u-hide">
         <div class="container">
             <div class="c-headerMain">
                 <div class="c-headerL">
@@ -80,8 +94,8 @@
         <div class="upsell__bg">
         <div class="upsell-challenge-content">
           <div class="hero--copy">
-            <h2 class="title text-black">Ready to Jump-Start your<br> pain-free life?</h2>
-            <h3 class="title--sub text-black">Introducing the 12-Week Simply<br/> Arthritis Group Coaching Program</h3>
+            <h2 class="title text-black">Feel Better and Heal Your<br/> Arthritis Starting Today!</h2>
+            <h3 class="title--sub text-black">It’s Time To Live An Arthritis Free Life. Join the Simply Arthritis 12-week Group Coaching Program and Experience The Approach That Dr. Blum Uses In Her Exclusive Private Practice</h3>
           </div>
            <div class="book-purchase__video-section row has--padding col--two">
               <div class="col">
@@ -100,7 +114,7 @@
     <div class="hero--footer hero__footer">
         <div class="container">
           <div class="head upsell-head">
-            <h4>Reduce inflammation and have more energy after just 14 days… </h4>
+            <h4>Have more energy and less pain after just 14 days...</h4>
             <a href="#charttable" class="btn btn-primary scroll-to-section">Learn More</a>
           </div>
           <div class="btnarea">
@@ -122,6 +136,25 @@
         -->
       </div>
     </section>
+    <div class="c-testimonial">
+      <div class="container text-center">
+        <h2 class="c-testimonial__heading section-title">TESTIMONIAL</h2>
+        <div class="testiMonialSlider">
+          <div class="">
+            <div class="c-testimonial__img">
+              <img src="dist/images/hyman.png" alt="person picture"/>
+            </div>
+            <div class="c-testimonial__content">
+              Dr. Susan Blum’s groundbreaking book, Healing Arthritis, is a powerful guide to self-healing. If you suffer from any type of arthritis or inflammation and are looking for a treatment approach that offers an option to medication by addressing the root cause, this book is for you!
+            </div>
+              <h4 class="c-testimonial__author">Dr. Mark Hyman</h4>
+              <div class="c-testimonial__bio">
+                Medical Director at Cleveland Clinic's Center for Functional Medicine, the Founder of The UltraWellness Center, and a ten-time #1 New York Times Best Selling author
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--
     <div class="c-bestSeller">
       <div class="container">
@@ -142,34 +175,34 @@
     </div>
     -->
      <section class="result">
-      <h2 class="title">Your Results</h2>
-      <h4>Treat the root cause of your joint pain, and you will heal your arthritis.</h4>
+      <h2 class="title">What You Can Expect</h2>
+      <h4>When you focus on the root causes, not the symptoms, you will heal your arthritis.</h4>
       <div class="container">
         <div class="member-image">
         </div>
         <div class="row col-four">
           <div class="col">
             <div class="result-copy">
-              <h5>REDUCE INFLAMMATION</h5>
-              <p>No matter what kind of arthritis you have, inflammation is the driving force.</p>
+              <h5>ELIMINATE<br/> PAIN</h5>
+               <p>Discover and treat what causes you pain.</p>
             </div>
           </div>
           <div class="col">
             <div class="result-copy">
-              <h5>ELIMINATE PAIN</h5>
-               <p>Find and treat the imbalances in your body that trigger pain.</p>
+              <h5>REDUCE INFLAMMATION</h5>
+              <p>Say goodbye to swollen, reddened and achy joints.</p>
             </div>
           </div>
           <div class="col">
             <div class="result-copy">
               <h5>LOWER MEDICATION</h5>
-              <p>As you feel better, reduce and even stop taking medication.</p>
+              <p>Eventually reduce and stop taking drugs.</p>
             </div>
           </div>
           <div class="col">
             <div class="result-copy">
-              <h5>INCREASE JOY AND CREATIVITY</h5>
-              <p>Regain your stamina and ability to get things done.</p>
+              <h5>INCREASE HAPPINESS & CREATIVITY</h5>
+              <p>Regain your strength and get things done</p>
             </div>
           </div>
         </div>
@@ -191,9 +224,9 @@
                 </div>
                 <div class="author__testimonials">
                     <blockquote>
-                        <p>"When I began working with Dr. Blum I had been struggling with severe Rheumatoid Arthritis since I was 5 years old, and was dependent on high doses of prednisone since I was 13.  I was also taking high doses of naproxen and had already tried every kind of medication to try to get off the prednisone.</p>
-                        <p>Now, I have been following her program, and have managed to decrease my prednisone and naproxen to a minimal level, and my pain has decreased significantly. I am particularly happy that I was able to get rid of the potent medications that had a destructive effect on my body and that only gave me temporary relief."</p>
-
+                      <p>
+                        "I had been struggling with severe Rheumatoid Arthritis since I was 5 years old, and was dependent on high doses of prednisone since I was 13. I have been following Dr. Blum’s program, and have managed to decrease my prednisone and naproxen to a minimal level, and my pain has decreased significantly. I am particularly happy that I was able to get rid of the potent medications that had a destructive effect on my body and that only gave me temporary relief."
+                      </p>
                     </blockquote>
                 </div>
             </div>
@@ -207,9 +240,9 @@
                 </div>
                 <div class="author__testimonials">
                   <blockquote>
-                    <p>“When I began working with Dr. Blum I was struggling with Rheumatoid Arthritis and Raynaud’s Disease.
-                      As soon as I began Dr Blum’s protocol I immediately felt more energy and my brain fog started to dissipate. I have no more rheumatoid factor and I do not suffer from Raynaud’s Disease. I am so grateful to Dr. Blum. She has not just given me the gift of health but also helped me look and feel better than I ever felt before. I live life to the fullest now and have a very positive outlook!"
-                      </p>
+                    <p>
+                      "When I began working with Dr. Blum I was struggling with Rheumatoid Arthritis and Raynaud’s Disease. As soon as I began Dr Blum’s protocol I immediately felt more energy and my brain fog started to dissipate. I have no more rheumatoid factor and I do not suffer from Raynaud’s Disease. I am so grateful to Dr. Blum. She has not just given me the gift of health but also helped me look and feel better than I ever felt before."
+                    </p>
                   </blockquote>
                 </div>:
             </div>
@@ -223,7 +256,9 @@
             </div>
             <div class="author__testimonials">
               <blockquote>
-                <p>"I started treating my Ankylosing Spondylitis by following Dr Blum’s program and healing my gut.  Within 2 months, I noticed that many of my inflammatory arthritis symptoms had cleared and I was less fatigued.  4 months later,  I was virtually symptom free and my energy was much improved. My Ankylosing Spondylitis symptoms have been much reduced. It's wonderful! Thank you!"</p>
+                <p>
+                  "I started treating my Ankylosing Spondylitis by following Dr Blum’s program and healing my gut. Within 2 months, I noticed that many of my inflammatory arthritis symptoms had cleared and I was less fatigued. 4 months later, I was virtually symptom free and my energy was much improved."
+                </p>
               </blockquote>
             </div>
           </div>
@@ -236,7 +271,9 @@
             </div>
             <div class="author__testimonials">
               <blockquote>
-                <p>“I have three autoimmune diseases -- psoriasis, osteoarthritis and Dupuytren's Contracture (lumps in my palms). I feel much better after following the food plan -- much less bloated -- and I've lost nearly 15 pounds."</p>
+                <p>
+                  "I have three autoimmune diseases -- psoriasis, osteoarthritis and Dupuytren's Contracture (lumps in my palms). I feel much better after following the food plan -- much less bloated -- and I've lost nearly 15 pounds"
+                </p>
               </blockquote>
             </div>
           </div>
@@ -249,7 +286,39 @@
             </div>
             <div class="author__testimonials">
               <blockquote>
-                <p>"I highly recommend Dr. Blum’s program to anyone who is dealing with arthritis.  I know first hand she was unbelievable to work with for my thyroid and gut issues. She also has helped, and is helping many of my clients. Dr. Blum’s approach is amazing, and I am so grateful that I had the opportunity to work with her. She has a huge heart and truly cares about her patients. She literally saved my life." </p>
+                <p>
+                  "I highly recommend Dr. Blum’s program to anyone who is dealing with arthritis. I know first hand she was unbelievable to work with for my thyroid and gut issues. Dr. Blum’s approach is amazing, and I am so grateful that I had the opportunity to work with her. She literally saved my life."
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="item testimonials__slider-item">
+            <div class="author">
+              <div class="author--headshot"><img src="dist/images/headshot_christiane.jpg" alt="Christiane Northrup, MD"></div>
+              <div class="author--info">
+                <h4>Amy Myers M.D</h4><small>New York Times bestselling author of The Autoimmune Solution and The Thyroid Connection.</small>
+              </div>
+            </div>
+            <div class="author__testimonials">
+              <blockquote>
+                <p>
+                  "Dr. Blum has done it again!  Healing Arthritis is a ground-breaking, science-based, easy-to-follow prescription for restoring your health and treating your joint pain.  Read it for yourself and then give it to the people you love!"
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="item testimonials__slider-item">
+            <div class="author">
+              <div class="author--headshot"><img src="dist/images/headshot_christiane.jpg" alt="Christiane Northrup, MD"></div>
+              <div class="author--info">
+                <h4>Dr. Mark Hyman</h4><small>Medical Director at Cleveland Clinic's Center for Functional Medicine, the Founder of The UltraWellness Center, and a ten-time #1 New York Times Best Selling author.</small>
+              </div>
+            </div>
+            <div class="author__testimonials">
+              <blockquote>
+                <p>
+                  "Dr. Susan Blum’s groundbreaking book, Healing Arthritis, is a powerful guide to self-healing. If you suffer from any type of arthritis or inflammation and are looking for a treatment approach that offers an option to medication by addressing the root cause, this book is for you!"
+                </p>
               </blockquote>
             </div>
           </div>
@@ -355,15 +424,15 @@
       <div class="container">
         <h2 class="title text-orange">The Simply Arthritis Program will teach you</h2>
         <ul class="list-dots large">
-          <li>The best food plan to follow and why.</li>
-          <li>How stress might be causing inflammation and what you can do about it.</li>
+          <li>What foods to eat that can radically help to eliminate pain.</li>
+          <li>How to reduce inflammation without medication.</li>
+          <li>How stress can cause you pain and what you can do about it.</li>
           <li>Why the health of your gut matters and how to fix it.</li>
-          <li>How to continue your healing long after the program is over.</li>
         </ul>
       </div>
     </section>
     <section class="upsell success-keys text-center">
-      <h2 class="title">The Program Benefits</h2>
+      <h2 class="title">Why You Need This Program</h2>
       <div class="container">
         <div class="row col--three has--padding">
           <div class="col">
@@ -371,7 +440,7 @@
               <div class="media-image"><img style="width: 80px;" src="dist/images/access.svg"></div>
               <div class="media-copy">
                 <h3>COMMUNITY</h3>
-                <div class="copy">Join a community that is committed to healing your arthritis.</div>
+                <div class="copy">Join a community that is committed to healing your arthritis. You'll never feel alone on your journey to becoming pain-free.</div>
               </div>
             </div>
           </div>
@@ -380,7 +449,7 @@
               <div class="media-image"><img src="dist/images/knowledge.svg"></div>
               <div class="media-copy">
                 <h3>COACHING</h3>
-                <div class="copy">Follow a step-by-step plan that's easy and guided. You'll never feel alone.</div>
+                <div class="copy">Follow a guided step-by-step plan that's easy and inspiring. </div>
               </div>
             </div>
           </div>
@@ -389,7 +458,7 @@
             <div class="media">
               <div class="media-image"><img src="dist/images/support.svg"></div>
               <div class="media-copy">
-                <h3>CONFIDENCE</h3>
+                <h3>EXPERTISE</h3>
                 <div class="copy">Learn the exact supplements Dr. Blum uses with her arthritis patients.</div>
               </div>
             </div>
@@ -676,22 +745,60 @@
                   </div>
               </div>
           </div>
-          <div class="upsell-preptext">
-            <div class="container">
-              <div class="upsell-preptext__left">
-                Already have your copy of Healing Arthritis? You're ready to get started. If not, act now to <a href="/bookpurchase.html" style="color: #1b6ac9;">purchase</a> your copy.
-
-                <p>Heal your arthritis, change your life. Join us today!</p>
-                </div>
-                <div class="upsell-preptext__right">
-                  <img src="/dist/images/Book_Simple.png">
+        </div>
+      </section>
+      <div class="c-testimonial">
+        <div class="container text-center">
+          <h2 class="c-testimonial__heading section-title">TESTIMONIAL</h2>
+          <div class="testiMonialSlider">
+            <div class="">
+              <div class="c-testimonial__img">
+                <img src="dist/images/Amy-Myers.jpg" alt="person picture"/>
+              </div>
+              <div class="c-testimonial__content">
+                Dr. Blum has done it again!  Healing Arthritis is a ground-breaking, science-based, easy-to-follow prescription for restoring your health and treating your joint pain.  Read it for yourself and then give it to the people you love!
+              </div>
+              <h4 class="c-testimonial__author">Amy Myers M.D</h4>
+                <div class="c-testimonial__bio">
+                  New York Times bestselling author of The Autoimmune Solution and The Thyroid Connection
                 </div>
             </div>
-
-
           </div>
+        </div>
       </div>
-    </section>
+      <div class="c-about c-about__upsell" >
+        <div class="container">
+          <h2 class="c-about__heading title">About Dr. Blum</h2>
+          <div class="c-about__left">
+            <img src="/dist/images/susan-croped.jpg">
+          </div>
+          <div class="c-about__right">
+            <p>
+              Over the past 10 years in my private practice, I have seen more and more people suffering with arthritis. Mark my words … it is the 21st Century epidemic. In fact, research on the gut-arthritis connection is clear and overwhelming — to heal the joints you must heal the gut.
+            </p>
+            <p>
+              When I discovered I had arthritis, I realized that this condition is not just for older folks, and it set me on a path to find relief.  And guess what?  After treating thousands of people in my clinical practice, Blum Center for Health, I discovered the exact steps needed to treat and heal arthritis! After using these steps to heal my own arthritis I decided to make it my personal mission to bring healing to the millions of people suffering with arthritis.
+            </p>
+            <p>
+              Here’s the great news: No matter what type of arthritis you have, you can heal your joints by finding and treating inflammation at its source. I have helped thousands of people do this, I have healed myself, and I know I can help you, too.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="upsell_chart_main">
+        <div class="upsell-preptext">
+          <div class="container">
+            <div class="upsell-preptext__left">
+              Already have your copy of Healing Arthritis? You're ready to get started. If not, act now to <a href="/bookpurchase.html" style="color: #1b6ac9;">purchase</a> your copy.
+
+              <p>Heal your arthritis, change your life. Join us today!</p>
+              </div>
+              <div class="upsell-preptext__right">
+                <img src="/dist/images/Book_Simple.png">
+              </div>
+          </div>
+        </div>
+      </div>
     <footer class="footer">
       <div class="container">
         <h5 class="logo footer--logo"><a href="https://blumhealthmd.com"><img src="dist/images/footer-logo.jpg"></h5>
