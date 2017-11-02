@@ -35,29 +35,39 @@
                 <a href="#" class="bookbuy__close"><span></span></a>
                 <h4>Pick an online store to purchase the book from:</h4>
                 <div class="bookbuy__books__content">
-                    <a href="http://amzn.to/2dHLlaL" target="_blank"><img src="dist/images/logo_amazon.png" alt="amazon store"></a>
+                    <a href="http://amzn.to/2fwzuj5" target="_blank"><img src="dist/images/logo_amazon.png" alt="amazon store"></a>
                     <span>OR</span>
-                    <a href="http://www.barnesandnoble.com/w/the-eat-fat-get-thin-cookbook-mark-hyman/1124015412?ean=9780316317504" target="_blank"><img src="dist/images/logo_b-and-n.png" alt="Barnes &amp; Noble Booksellers"></a></li>
+                    <a href="https://www.barnesandnoble.com/w/healing-arthritis-dr-susan-blum-md/1126314221?ean=9781501156465" target="_blank"><img src="dist/images/logo_b-and-n.png" alt="Barnes &amp; Noble Booksellers"></a></li>
                 </div>
             </div>
         </div>
     </div>
-    <header class="header resources" style="display: none;">
-      <div class="container">
-        <div class="headerbookcover"><img src="dist/images/header-book-image-new.png"></div>
-        <h1 class="logo"><a href="/"><span class="sr-only">EAT FAT, GET THIN COOKBOOK</span></a></h1>
-        <a href="/book" class="eat-fat-link">Eat Fat, Get Thin Book Site ></a>
-        <div class="header--right">
-          <div class="amazon-header-text">#1 Amazon Bestseller</div>
-          <a href="http://drhyman.com/efgt-course" class="link">Eat Fat, Get Thin Course</a>
-          <a href="http://drhyman.com/efgt-challenge" class="link">New Year’s Challenge</a>
-          <a href="resources.html" class="link">Resources</a>
-          <a href="#" class="btn btn-secondary btn-blue-dark buybtn">
-            Buy The Cookbook
-          </a>
+    <header class="c-header header c-headerBook">
+        <div class="container">
+            <div class="c-headerMain">
+                <div class="c-headerL c-headerBookL">
+                    <div class="c-headerBook__media">
+                      <img src="dist/images/best_book.jpg">
+                    </div>
+                    <div class="c-headerBook__content">
+                      <h3 class="c-headerBook__title"><em>#1</em>
+                        <img src="dist/images/amazon-logo-white.svg">
+                      </h3>
+                      <p>Bestseller</p>
+                    </div>
+                </div>
+                <div class="c-headerC">
+                    <h1 class="c-logo">
+                        <a href="https://blumhealthmd.com/"><img src="dist/images/main-logo.jpg"></a>
+                    </h1>
+                </div>
+                <div class="c-headerR">
+                    <a href="/" class="c-btn buybtn">BUY BOOK</a>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
+    
     <div class="efgt-optin bg-home text-center">
       <div class="container">
         <h1 class="title">It’s Time To Live An Arthritis Free Life</h1>
@@ -115,7 +125,7 @@
                                 </div>
 
                                 <div class="clear mc-field-group">
-                                    <button type="submit" class="Button button ctct-button Button--block Button-secondary" data-enabled="enabled">Send Me The Free Video!</button>
+                                    <button type="submit" class="Button js-btn button ctct-button Button--block Button-secondary" data-enabled="enabled">Send Me The Free Video!</button>
                                 </div>
 
 
@@ -162,6 +172,19 @@
       </div>
     </div>
     <script src="dist/js/main.min.js"></script>
+    <script type="text/javascript"> 
+      jQuery('.js-btn').click(function (){
+        setTimeout(function() {
+          if (jQuery(".ctct-custom-form").is(':hidden')) {
+              window.location = "bookpurchase.html";
+          }
+          else {
+            
+          }
+        }, 2000);
+
+      });
+    </script>
     <!-- Facebook Pixel Code -->
       <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?

@@ -3373,11 +3373,6 @@ img {
   }
 }
 
-.book-purchase__video-section .col {
-  float: none;
-  margin: auto;
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .book-purchase__video-section .col {
     width: 50%;
@@ -9312,6 +9307,11 @@ img {
   .bookUpsell .upsell.upsell-as-seen-on .headingtext h3 {
     font-size: 34px;
   }
+}
+
+.bookUpsell .book-purchase__video-section .col {
+  float: none;
+  margin: auto;
 }
 
 .bookPurchase2a .book-purchase__video .title--sub {

@@ -47,8 +47,6 @@
 				padding-top: 45px;
 			}
 			.col{
-				float: none;
-				margin: auto;
 				@include screen(tablet-max) {
 					width: 50%;
 
