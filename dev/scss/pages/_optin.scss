@@ -20,8 +20,15 @@
 	}
 	.container{
 		opacity: 0.96;
+		position:relative;
 		@include screen(desktop) {
 			max-width: 1216px;	
+		}
+	}
+	.title {
+		padding-top:10px;
+		@include screen(tablet){
+			padding-top:0;
 		}
 	}
 	.title--sub{
@@ -43,6 +50,28 @@
 				}
 			}
 		}
+	}
+
+	&__skip {
+		position:absolute;
+		right: 15px;
+		top: -20px;
+
+		@include screen(tablet){
+			top: -30px;
+			right: 20px;
+		}
+
+		svg {
+			width: 15px;
+			height: 15px;
+
+			@include screen(tablet){
+				width: 25px;
+				height: 25px;
+			}
+		}
+
 	}
 	.form{
 		max-width: 346px;

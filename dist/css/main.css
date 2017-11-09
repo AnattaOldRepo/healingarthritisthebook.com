@@ -2734,11 +2734,22 @@ img {
 
 .efgt-optin .container {
   opacity: 0.96;
+  position: relative;
 }
 
 @media only screen and (min-width: 1025px) {
   .efgt-optin .container {
     max-width: 1216px;
+  }
+}
+
+.efgt-optin .title {
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .efgt-optin .title {
+    padding-top: 0;
   }
 }
 
@@ -2763,6 +2774,31 @@ img {
   .efgt-optin__box .row.has--padding .col {
     padding-right: 30px;
     padding-left: 30px;
+  }
+}
+
+.efgt-optin__skip {
+  position: absolute;
+  right: 15px;
+  top: -20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .efgt-optin__skip {
+    top: -30px;
+    right: 20px;
+  }
+}
+
+.efgt-optin__skip svg {
+  width: 15px;
+  height: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .efgt-optin__skip svg {
+    width: 25px;
+    height: 25px;
   }
 }
 
