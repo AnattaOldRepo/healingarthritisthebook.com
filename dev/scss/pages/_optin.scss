@@ -8,6 +8,7 @@
 		padding-bottom: 90px;
 	}
 	&__box{
+		position:relative;
 		background-color: $white;
 		border: 1px solid $border-color;
 		@include padding(0 0 33px);
@@ -54,11 +55,11 @@
 
 	&__skip {
 		position:absolute;
-		right: 15px;
-		top: -20px;
+		right: 10px;
+		top: 10px;
 
 		@include screen(tablet){
-			top: -30px;
+			top: 20px;
 			right: 20px;
 		}
 
@@ -67,11 +68,17 @@
 			height: 15px;
 
 			@include screen(tablet){
-				width: 25px;
-				height: 25px;
+				width: 20px;
+				height: 20px;
 			}
 		}
 
+	}
+
+	.col.image--col {
+		@include screen(tablet-m) {
+			padding: 0 20px;
+		}
 	}
 	.form{
 		max-width: 346px;
@@ -107,6 +114,9 @@
 	.image--col{
 		.video{
 			margin:15px 0 0 0;
+			@include screen(tablet-m){
+				margin:35px 0 0 0;
+			}
 		}
 	}
 }

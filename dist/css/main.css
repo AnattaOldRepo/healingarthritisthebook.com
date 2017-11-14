@@ -2715,6 +2715,7 @@ img {
 }
 
 .efgt-optin__box {
+  position: relative;
   background-color: #FFFFFF;
   border: 1px solid #e1e1e1;
   padding: 0 0 33px;
@@ -2779,13 +2780,13 @@ img {
 
 .efgt-optin__skip {
   position: absolute;
-  right: 15px;
-  top: -20px;
+  right: 10px;
+  top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .efgt-optin__skip {
-    top: -30px;
+    top: 20px;
     right: 20px;
   }
 }
@@ -2797,8 +2798,14 @@ img {
 
 @media only screen and (min-width: 768px) {
   .efgt-optin__skip svg {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .efgt-optin .col.image--col {
+    padding: 0 20px;
   }
 }
 
@@ -2848,6 +2855,12 @@ img {
 
 .efgt-optin .image--col .video {
   margin: 15px 0 0 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .efgt-optin .image--col .video {
+    margin: 35px 0 0 0;
+  }
 }
 
 .efgt-home-images {
